@@ -1,0 +1,13 @@
+Patch: BQCA.v40
+Applied: 2026-07-22T23:16:49Z
+Root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Backup: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v40.20260722191640
+Prerequisite: BQCA.v39-update-1
+Authorized environment: /home/architect/qiskit-v2x-env
+Creation command: python3 -m venv "/home/architect/qiskit-v2x-env"
+Activation command: source "/home/architect/qiskit-v2x-env/bin/activate"
+Project-local environment: unsupported, ignored, and untouched
+Qiskit scope: all checks, uninstalls, upgrades, installs, validation, and execution occur inside the activated home environment
+Environment file: excluded and unchanged
+Home runtime environment: excluded and unchanged by the installer
+Legacy project runtime environment: excluded and unchanged by the installer

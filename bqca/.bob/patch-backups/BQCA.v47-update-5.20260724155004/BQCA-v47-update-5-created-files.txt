@@ -1,0 +1,4 @@
+.bob/quantum-tools/knowlegebase/bqca_quantum_kb.py
+.bob/quantum-tools/bqca-quantum-kb.sh
+.bob/quantum-tools/knowlegebase/README.md
+.bob/patches-applied/BQCA.v47-update-5.txt

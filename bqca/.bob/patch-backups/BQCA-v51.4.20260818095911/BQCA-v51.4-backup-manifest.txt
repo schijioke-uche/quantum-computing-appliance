@@ -1,0 +1,8 @@
+Patch: BQCA-v51.4
+Created: 2026-08-18T13:59:14Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent
+Bob 1.x launcher: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-v1x.sh
+Bob 2.x launcher: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-v2.0.1.sh
+Protected assets excluded: .env, governed stores, .git, patch backups, HOME Bob/Qiskit state
+Restore with:
+  patch-BQCA-v51.4.sh --target "/home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/.bob/patch-backups/BQCA-v51.4.20260818095911"

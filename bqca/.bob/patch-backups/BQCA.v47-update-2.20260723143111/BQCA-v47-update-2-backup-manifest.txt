@@ -1,0 +1,7 @@
+Patch: BQCA.v47-update-2
+Created: 2026-07-23T18:31:12Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Purpose: repair partial BQCA v47 policy and runtime consolidation
+Protected paths excluded: .env, bob-quantum-designs, bob-quantum-store, $HOME/qiskit-v2x-env, $HOME/.qiskit/qiskit-ibm.json
+Restore with:
+  patch-BQCA.v47-update-2.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-2.20260723143111"

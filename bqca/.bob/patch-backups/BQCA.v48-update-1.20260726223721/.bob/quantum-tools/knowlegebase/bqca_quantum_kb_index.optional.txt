@@ -1,0 +1,448 @@
+BQCA IBM QUANTUM DOCUMENTATION KNOWLEDGEBASE
+================================================
+
+Generated: 2026-07-24
+Purpose: Curated title-and-URL index for the IBM Bob Quantum Computing Agent (BQCA).
+
+SOURCE SCOPE
+------------
+This index consolidates IBM Quantum documentation pages and the
+verified documentation sublinks exposed by those quantum knowledgebase pages. It is designed as a
+stable retrieval index, not as a copy of IBM documentation content.
+
+Total unique indexed pages: 56
+
+FORMAT
+------
+Each record contains:
+  TITLE       Human-readable documentation title
+  URL         Canonical IBM Quantum documentation URL
+  CATEGORY    Functional grouping for BQCA retrieval
+  DESCRIPTION Short retrieval-oriented summary
+
+
+
+==============================================================================
+API REFERENCE
+==============================================================================
+
+[000] Install Qiskit Virtual Environment
+URL:  https://github.com/schijioke-uche/quantum-computing-qiskit-tool-wizard.git
+CATEGORY: Quantum Computing Qiskit Tool Wizard - Qiskit Virtual Environment Installation
+DESCRIPTION: Official Qiskit Tool Wizard Installation for Qiskit Virtual Environment
+
+
+[001] Qiskit SDK API documentation for latest qiskit
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit
+CATEGORY: API Reference and latest qiskit information
+DESCRIPTION: Official Qiskit SDK API reference index.
+
+
+==============================================================================
+GUIDE
+==============================================================================
+
+[002] Introduction to Qiskit
+URL: https://quantum.cloud.ibm.com/docs/en/guides/tools-intro
+CATEGORY: Guide
+DESCRIPTION: Overview of the Qiskit SDK, Qiskit Runtime, addons, and ecosystem.
+
+
+==============================================================================
+GUIDE INDEX
+==============================================================================
+
+[003] IBM Quantum Documentation - Introduction
+URL: https://quantum.cloud.ibm.com/docs/en/guides
+CATEGORY: Guide Index
+DESCRIPTION: Entry point for IBM Quantum and Qiskit documentation guides.
+
+
+==============================================================================
+GUIDE
+==============================================================================
+
+[004] Quickstart
+URL: https://quantum.cloud.ibm.com/docs/en/guides/quick-start
+CATEGORY: Guide
+DESCRIPTION: Build and simulate a first quantum circuit locally.
+
+[005] IBM Quantum Composer
+URL: https://quantum.cloud.ibm.com/docs/en/guides/composer
+CATEGORY: Guide
+DESCRIPTION: Graphical circuit construction, inspection, execution, and visualization.
+
+
+==============================================================================
+INSTALLATION GUIDE
+==============================================================================
+
+[006] Install Qiskit
+URL: https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit
+CATEGORY: Installation Guide
+DESCRIPTION: Install the Qiskit SDK and optional components.
+
+[007] Install the Qiskit SDK from source
+URL: https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit-source
+CATEGORY: Installation Guide
+DESCRIPTION: Build and install the Qiskit SDK from source.
+
+
+==============================================================================
+CONFIGURATION GUIDE
+==============================================================================
+
+[008] Configure the Qiskit SDK locally
+URL: https://quantum.cloud.ibm.com/docs/en/guides/configure-qiskit-local
+CATEGORY: Configuration Guide
+DESCRIPTION: Configure local Qiskit behavior and settings.
+
+
+==============================================================================
+C API GUIDE
+==============================================================================
+
+[009] Install the Qiskit C API
+URL: https://quantum.cloud.ibm.com/docs/en/guides/install-c-api
+CATEGORY: C API Guide
+DESCRIPTION: Install and use the Qiskit C API.
+
+
+==============================================================================
+C EXTENSION GUIDE
+==============================================================================
+
+[010] Extend Qiskit in Python with C
+URL: https://quantum.cloud.ibm.com/docs/en/guides/c-extension-for-python
+CATEGORY: C Extension Guide
+DESCRIPTION: Build Python extensions that interface with Qiskit's C API.
+
+
+==============================================================================
+TRANSPILATION GUIDE
+==============================================================================
+
+[011] Introduction to transpilation
+URL: https://quantum.cloud.ibm.com/docs/en/guides/transpile
+CATEGORY: Transpilation Guide
+DESCRIPTION: Overview of transpilation concepts and workflow.
+
+
+==============================================================================
+QISKIT API - CIRCUIT CONSTRUCTION
+==============================================================================
+
+[012] Quantum circuit model (qiskit.circuit)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Core circuit data model, instructions, registers, parameters, and control flow.
+
+[013] QuantumCircuit class
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.QuantumCircuit
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Primary class for building and manipulating quantum circuits.
+
+[014] Circuit annotations (qiskit.circuit.annotation)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit_annotation
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Circuit annotation interfaces and annotation data.
+
+[015] Classical expressions (qiskit.circuit.classical)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit_classical
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Classical expression system used by dynamic circuits and control flow.
+
+[016] Circuit Library (qiskit.circuit.library)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit_library
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Reusable circuits, gates, ansatzes, and standard building blocks.
+
+[017] Random Circuits (qiskit.circuit.random)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit_random
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Utilities for generating random circuits.
+
+[018] Singleton instructions (qiskit.circuit.singleton)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/circuit_singleton
+CATEGORY: Qiskit API - Circuit construction
+DESCRIPTION: Singleton instruction and gate implementation interfaces.
+
+
+==============================================================================
+QISKIT API - QUANTUM INFORMATION
+==============================================================================
+
+[019] Quantum Information (qiskit.quantum_info)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/quantum_info
+CATEGORY: Qiskit API - Quantum information
+DESCRIPTION: States, operators, channels, measures, and quantum-information utilities.
+
+
+==============================================================================
+QISKIT API - TRANSPILATION
+==============================================================================
+
+[020] Circuit Converters (qiskit.converters)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/converters
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Conversion utilities between circuit representations.
+
+[021] DAG Circuits (qiskit.dagcircuit)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/dagcircuit
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Directed-acyclic-graph circuit representation.
+
+[022] Passmanager (qiskit.passmanager)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/passmanager
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Generic pass-manager infrastructure.
+
+[023] Circuit Synthesis (qiskit.synthesis)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/synthesis
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Synthesis methods for circuits, gates, operators, and permutations.
+
+[024] Approximate Quantum Compiler (qiskit.synthesis.unitary.aqc)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.synthesis.unitary.aqc
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Approximate unitary compilation interfaces.
+
+[025] Transpiler (qiskit.transpiler)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/transpiler
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Circuit mapping, routing, optimization, targets, and pass managers.
+
+[026] Transpiler Passes (qiskit.transpiler.passes)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/transpiler_passes
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Analysis and transformation passes.
+
+[027] Synthesis Plugins
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/transpiler_synthesis_plugins
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Plugin interfaces for synthesis passes.
+
+[028] Preset Passmanagers
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/transpiler_preset
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Preset compilation pipelines and generation functions.
+
+[029] Transpiler Stage Plugin Interface
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/transpiler_plugins
+CATEGORY: Qiskit API - Transpilation
+DESCRIPTION: Interfaces for custom transpiler-stage plugins.
+
+
+==============================================================================
+QISKIT API - PRIMITIVES AND PROVIDERS
+==============================================================================
+
+[030] Primitives (qiskit.primitives)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/primitives
+CATEGORY: Qiskit API - Primitives and providers
+DESCRIPTION: Base interfaces and local reference implementations for primitive execution.
+
+[031] Providers Interface (qiskit.providers)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/providers
+CATEGORY: Qiskit API - Primitives and providers
+DESCRIPTION: Backend, job, options, and provider interfaces.
+
+[032] BasicProvider: Python-based Simulators
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/providers_basic_provider
+CATEGORY: Qiskit API - Primitives and providers
+DESCRIPTION: Basic Python simulator provider.
+
+[033] Fake Provider
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/providers_fake_provider
+CATEGORY: Qiskit API - Primitives and providers
+DESCRIPTION: Fake backends and provider test utilities.
+
+
+==============================================================================
+QISKIT API - RESULTS AND VISUALIZATION
+==============================================================================
+
+[034] Experiment Results (qiskit.result)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/result
+CATEGORY: Qiskit API - Results and visualization
+DESCRIPTION: Result containers, counts, distributions, and result processing.
+
+[035] Visualizations (qiskit.visualization)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/visualization
+CATEGORY: Qiskit API - Results and visualization
+DESCRIPTION: Circuit, state, distribution, and hardware visualization functions.
+
+
+==============================================================================
+QISKIT API - SERIALIZATION
+==============================================================================
+
+[036] OpenQASM 2 (qiskit.qasm2)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/qasm2
+CATEGORY: Qiskit API - Serialization
+DESCRIPTION: OpenQASM 2 import and export.
+
+[037] OpenQASM 3 (qiskit.qasm3)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/qasm3
+CATEGORY: Qiskit API - Serialization
+DESCRIPTION: OpenQASM 3 import and export.
+
+[038] QPY serialization (qiskit.qpy)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/qpy
+CATEGORY: Qiskit API - Serialization
+DESCRIPTION: Binary serialization format for Qiskit objects.
+
+
+==============================================================================
+QISKIT API - OTHER
+==============================================================================
+
+[039] C API interface from Python (qiskit.capi)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/capi
+CATEGORY: Qiskit API - Other
+DESCRIPTION: Python-side access to Qiskit's C API interface.
+
+[040] Compilation Routines (qiskit.compiler)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/compiler
+CATEGORY: Qiskit API - Other
+DESCRIPTION: Top-level compilation helpers including transpilation.
+
+[041] Top-level exceptions (qiskit.exceptions)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/exceptions
+CATEGORY: Qiskit API - Other
+DESCRIPTION: Core Qiskit exception types.
+
+[042] Root namespace (qiskit)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/root
+CATEGORY: Qiskit API - Other
+DESCRIPTION: Top-level Qiskit SDK namespace.
+
+[043] Utilities (qiskit.utils)
+URL: https://quantum.cloud.ibm.com/docs/en/api/qiskit/utils
+CATEGORY: Qiskit API - Other
+DESCRIPTION: General Qiskit utility functions and classes.
+
+
+==============================================================================
+GUIDE - CAPABILITIES
+==============================================================================
+
+[044] Advanced techniques - Qiskit addons
+URL: https://quantum.cloud.ibm.com/docs/en/guides/addons
+CATEGORY: Guide - Capabilities
+DESCRIPTION: Overview of modular Qiskit addons for advanced workflows.
+
+
+==============================================================================
+GUIDE - SERVICES
+==============================================================================
+
+[045] Introduction to IBM Quantum services
+URL: https://quantum.cloud.ibm.com/docs/en/guides/compute-services
+CATEGORY: Guide - Services
+DESCRIPTION: Overview of IBM Quantum compute services and platform capabilities.
+
+
+==============================================================================
+GUIDE - CIRCUIT BUILDING
+==============================================================================
+
+[046] Construct circuits
+URL: https://quantum.cloud.ibm.com/docs/en/guides/construct-circuits
+CATEGORY: Guide - Circuit building
+DESCRIPTION: Techniques for creating and manipulating quantum circuits.
+
+
+==============================================================================
+GUIDE - ERROR HANDLING
+==============================================================================
+
+[047] Error mitigation and suppression techniques
+URL: https://quantum.cloud.ibm.com/docs/en/guides/error-mitigation-and-suppression-techniques
+CATEGORY: Guide - Error handling
+DESCRIPTION: Overview of supported mitigation and suppression techniques.
+
+
+==============================================================================
+GUIDE - EXECUTION
+==============================================================================
+
+[048] Introduction to primitives
+URL: https://quantum.cloud.ibm.com/docs/en/guides/primitives
+CATEGORY: Guide - Execution
+DESCRIPTION: Introduction to Sampler and Estimator primitive workflows.
+
+
+==============================================================================
+ADDON GUIDE
+==============================================================================
+
+[049] Sample-based quantum diagonalization (SQD)
+URL: https://quantum.cloud.ibm.com/docs/en/addons/qiskit-addon-sqd
+CATEGORY: Addon Guide
+DESCRIPTION: Documentation for the Qiskit SQD addon.
+
+
+==============================================================================
+GUIDE - FUNCTIONS
+==============================================================================
+
+[050] Introduction to Qiskit Functions
+URL: https://quantum.cloud.ibm.com/docs/en/guides/functions
+CATEGORY: Guide - Functions
+DESCRIPTION: Overview of Qiskit Functions and pre-built workload capabilities.
+
+
+==============================================================================
+SUPPORT
+==============================================================================
+
+[051] Error code registry
+URL: https://quantum.cloud.ibm.com/docs/en/errors
+CATEGORY: Support
+DESCRIPTION: IBM Quantum error-code lookup and remediation guidance.
+
+[052] Support
+URL: https://quantum.cloud.ibm.com/docs/en/guides/support
+CATEGORY: Support
+DESCRIPTION: Support channels, reporting paths, and common help resources.
+
+
+==============================================================================
+POLICY AND PRINCIPLES
+==============================================================================
+
+[053] Responsible quantum computing
+URL: https://quantum.cloud.ibm.com/docs/en/responsible-quantum-computing
+CATEGORY: Policy and principles
+DESCRIPTION: IBM responsible quantum-computing principles.
+
+
+==============================================================================
+GUIDE - QUICKSTART NEXT STEP
+==============================================================================
+
+[054] Run your first circuit on hardware
+URL: https://quantum.cloud.ibm.com/docs/en/guides/hello-world
+CATEGORY: Guide - Quickstart next step
+DESCRIPTION: End-to-end execution of a first circuit on IBM Quantum hardware.
+
+
+==============================================================================
+GUIDE - CIRCUIT BUILDING
+==============================================================================
+
+[055] Circuit library
+URL: https://quantum.cloud.ibm.com/docs/en/guides/circuit-library
+CATEGORY: Guide - Circuit building
+DESCRIPTION: How to use circuits and instructions from the Qiskit circuit library.
+
+
+==============================================================================
+GUIDE - COMPOSER AND SERIALIZATION
+==============================================================================
+
+[056] Introduction to OpenQASM
+URL: https://quantum.cloud.ibm.com/docs/en/guides/introduction-to-qasm
+CATEGORY: Guide - Composer and serialization
+DESCRIPTION: Introduction to OpenQASM syntax and circuit representation.

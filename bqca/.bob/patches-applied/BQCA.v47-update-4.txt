@@ -1,0 +1,7 @@
+Patch: BQCA.v47-update-4
+Applied: 2026-07-24T18:31:36Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-4.20260724143135
+Active policy: BQCA v47
+Behavior: direct execution is default; live combined output and dual result files; strict SUCCESS/FAILURE execution markers; formal orchestrator explicit opt-in
+Protected assets: .env, workload stores, home Qiskit environment, account JSON

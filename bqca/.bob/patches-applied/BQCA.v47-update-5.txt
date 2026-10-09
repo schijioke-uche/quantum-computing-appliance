@@ -1,0 +1,10 @@
+Patch: BQCA.v47-update-5
+Applied: 2026-07-24T19:50:06Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-5.20260724155004
+Active policy: BQCA v47 (preserved)
+Knowledgebase index: .bob/quantum-tools/knowlegebase/bqca_quantum_kb_index.txt
+Knowledgebase tool: .bob/quantum-tools/bqca-quantum-kb.sh
+Knowledgebase index status at installation: READY
+Required workflow: DESIGN/CODE seed URL access plus at least one relevant drilled sublink per accessed seed
+Protected assets: excluded and unchanged

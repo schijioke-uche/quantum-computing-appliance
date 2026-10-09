@@ -1,0 +1,28 @@
+BQCA v46 Policy Assurance Report
+=================================
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Checked: 2026-07-23T17:19:42Z
+Status: PASS
+
+Surfaces: modes=13 rules=11 skills=12 tools=29
+
+Errors:
+  - none
+
+Warnings:
+  - none
+
+Qiskit environment capabilities:
+  - --help
+  - -h
+  - activation-command
+  - check
+  - ensure
+  - environment-path
+  - exec
+  - hello-world
+  - hello-world-if-present
+  - python
+  - python-path
+  - run
+  - run-notebook

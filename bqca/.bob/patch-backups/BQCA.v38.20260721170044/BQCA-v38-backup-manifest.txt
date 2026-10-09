@@ -1,0 +1,6 @@
+Patch: BQCA.v38
+Created: 2026-07-21T21:00:49Z
+Appliance root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Environment file intentionally excluded: .env
+Restore with:
+  patch-BQCA.v38.sh --target "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent" --rollback "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v38.20260721170044"

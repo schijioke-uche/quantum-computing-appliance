@@ -1,0 +1,9 @@
+Patch: BQCA-49
+Applied: 2026-08-05T15:01:14Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-49.20260805110110
+Runtime helper: bob-filename-version-sync.sh
+Launcher marker: BQCA-ROOT-FILENAME-VERSION-SYNC-49
+Current Bob version at application: 1.0.6
+Behavior: On every xLaunchpad start, detect the installed Bob Shell version, store it in current_bob_version, export BOB_VERSION, and rename only older Bob-version-bearing regular filenames located directly in the BQCA project root.
+Safety: No downgrade, no overwrite, no subdirectory scan, active policy unchanged, and .env excluded.

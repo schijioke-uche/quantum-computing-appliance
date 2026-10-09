@@ -1,0 +1,7 @@
+Patch: BQCA-v51.1
+Applied: 2026-08-13T20:09:29Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-v51.1.20260813160927
+Bob 2.x launcher: bob-quantum-v2.0.1.sh
+Behavior: idempotent project environment loading, post-authentication mode refresh, and empty-mode prevention for chat/run
+Protected: .env, governed stores, HOME/.bob, HOME/qiskit-v2x-env, HOME/.qiskit/qiskit-ibm.json

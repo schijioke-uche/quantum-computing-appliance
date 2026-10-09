@@ -1,0 +1,9 @@
+Patch: BQCA.v41
+Created: 2026-07-23T13:40:15Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Purpose: Hello World is request-scoped and prohibited in non-Hello-World designs/code.
+Environment file intentionally excluded: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.env
+Home Qiskit environment intentionally excluded: /home/architect/qiskit-v2x-env
+Legacy project environment intentionally excluded: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/qiskit-v2x-env
+Restore with:
+  patch-BQCA.v41.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v41.20260723094014"

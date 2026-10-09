@@ -1,0 +1,18 @@
+{
+  "active_version": "v45",
+  "active_policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "versioned_policy_path": ".bob/BQCA-PRODUCTION-POLICY-v45.md",
+  "last_updated": "2026-07-23T16:03:38Z",
+  "patch_applied": "patch-BQCA.v45.sh",
+  "changes": [
+    "Direct execution as default workflow",
+    "Orchestrator optional for formal compliance",
+    "Added Section 15: Direct execution workflow",
+    "Updated Section 12: Removed mandatory orchestrator",
+    "Updated Section 11: Result capture via tee"
+  ],
+  "previous_version": "v44",
+  "policy_sha256": "5288c161aa5b07bc57e7e37f3e4b53ea582e383202e1b2dadc49e9153c53edf2",
+  "orchestrator_path": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+  "doctor_path": ".bob/quantum-tools/bqca-policy-doctor.sh"
+}

@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""BQCA v41 request-scoped Hello World validator."""
+from __future__ import annotations
+
+import argparse
+import ast
+import pathlib
+import re
+import sys
+
+HELLO_VARIANT = re.compile(
+    r"(?i)(?:\bhello[\s_-]*world\b|\bhellow[\s_-]*world\b)"
+)
+HELLO_ARTIFACT = re.compile(
+    r"(?i)(?:"
+    r"bob-quantum-store[/\\]test|"
+    r"hello[-_]?world\.(?:py|ipynb)|"
+    r"hellow[-_]?world\.(?:py|ipynb)|"
+    r"run\s+(?:qiskit\s+)?hello[\s_-]*world|"
+    r"hello[\s_-]*world\s+(?:test|testing|smoke\s*test|artifact|example|requirement)"
+    r")"
+)
+
+
+def normalized(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", value.lower())
+
+
+def filename_is_hello_world(path: pathlib.Path) -> bool:
+    name = normalized(path.stem)
+    return "helloworld" in name or "hellowworld" in name
+
+
+def first_heading_is_hello_world(text: str) -> bool:
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+        if line.startswith("#"):
+            return bool(HELLO_VARIANT.search(line.lstrip("#").strip()))
+        break
+    return False
+
+
+def module_docstring_is_hello_world(text: str) -> bool:
+    try:
+        tree = ast.parse(text)
+    except SyntaxError:
+        return False
+    doc = ast.get_docstring(tree, clean=False) or ""
+    return bool(HELLO_VARIANT.search(doc))
+
+
+def explicit_hello_world(path: pathlib.Path, text: str, kind: str) -> bool:
+    if filename_is_hello_world(path):
+        return True
+    if kind == "design":
+        return first_heading_is_hello_world(text)
+    if kind == "code":
+        return module_docstring_is_hello_world(text)
+    return first_heading_is_hello_world(text) or module_docstring_is_hello_world(text)
+
+
+def hello_references(text: str) -> list[str]:
+    findings: list[str] = []
+    for pattern, label in (
+        (HELLO_VARIANT, "Hello World wording"),
+        (HELLO_ARTIFACT, "Hello World test/artifact/path requirement"),
+    ):
+        if pattern.search(text):
+            findings.append(label)
+    return findings
+
+
+def validate(path: pathlib.Path, kind: str) -> list[str]:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        return [f"cannot read artifact: {exc}"]
+
+    actual_kind = kind
+    if actual_kind == "auto":
+        actual_kind = "code" if path.suffix.lower() == ".py" else "design"
+
+    if explicit_hello_world(path, text, actual_kind):
+        return []
+
+    findings = hello_references(text)
+    if not findings:
+        return []
+
+    return [
+        "non-Hello-World artifact contains prohibited Hello World content: "
+        + ", ".join(sorted(set(findings))),
+        "remove the Hello World section/test/path or explicitly name/title the artifact as a Hello World request",
+    ]
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="BQCA v41 Hello World request-scope validator"
+    )
+    parser.add_argument("--kind", choices=("auto", "design", "code"), default="auto")
+    parser.add_argument("paths", nargs="+")
+    args = parser.parse_args()
+
+    failed = False
+    for raw in args.paths:
+        path = pathlib.Path(raw)
+        problems = validate(path, args.kind)
+        if problems:
+            failed = True
+            print(f"BQCA_HELLO_WORLD_SCOPE_V41=FAIL kind={args.kind} file={path}")
+            for problem in problems:
+                print(f"  - {problem}")
+        else:
+            print(f"BQCA_HELLO_WORLD_SCOPE_V41=PASS kind={args.kind} file={path}")
+
+    return 1 if failed else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+# BQCA-CANONICAL-PRODUCTION-POLICY-v47:BEGIN
+# BQCA v47 Update 4: follow .bob/BQCA-PRODUCTION-POLICY.md. Direct execution
+# through bqca-direct-execution.sh is the default and must use the authorized
+# home Python with unbuffered live stdout/stderr plus dual result capture.
+# Code must preserve real-QPU-first plan-aware execution, controlled simulator
+# fallback, and the required BQCA markers, including BQCA_RESULT=SUCCESS or
+# BQCA_RESULT=FAILURE. The orchestrator is explicit opt-in only for formal
+# compliance, deployment, or audit evidence. Direct-mode policy gaps are
+# warnings that preserve the workload exit status; credential leakage blocks.
+# This block supersedes conflicting local execution guidance.
+# BQCA-CANONICAL-PRODUCTION-POLICY-v47:END
+
+# BQCA-LOCAL-ALGORITHM-KNOWLEDGEBASE-v47-update-6:BEGIN
+# For every quantum DESIGN or CODE intent, consult bqca-quantum-kb.sh and the
+# offline bqca_quantum_algorithm_catalog.json for Qiskit 2.5+ algorithm,
+# Open/Paid plan, simulator-fallback, design-card, and scaffold guidance.
+# Update 6 supersedes Update 5 URL crawling and sublink drilldown. No network
+# access or mandatory research trace is required. The catalog supplements IBM
+# Bob intelligence and never overrides the active central policy. If no local
+# entry fits, use approved research and continue rather than blocking the task.
+# BQCA-LOCAL-ALGORITHM-KNOWLEDGEBASE-v47-update-6:END

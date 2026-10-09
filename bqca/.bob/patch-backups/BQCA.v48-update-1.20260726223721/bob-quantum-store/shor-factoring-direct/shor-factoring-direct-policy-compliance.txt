@@ -1,0 +1,23 @@
+========================================================================================
+BQCA v48 FORMAL POLICY COMPLIANCE REPORT
+========================================================================================
+Artifact                : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Artifact type           : code
+Canonical policy        : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/BQCA-PRODUCTION-POLICY.md
+Validation date/time    : 2026-07-26T21:55:06.597874-04:00
+Artifact SHA-256        : 63b7c258810066b824a4706135a6fb6db2540f3167f0720802ae5aad4dd53c33
+----------------------------------------------------------------------------------------
+VALIDATION GATES
+----------------------------------------------------------------------------------------
+Artifact routing                : PASS
+Python syntax                   : PASS     [BQCA v40] Home qiskit-v2x-env ready: Qiskit 2.5.1
+Qiskit code policy              : PASS     [BQCA v40] Home qiskit-v2x-env ready: Qiskit 2.5.1 BQCA_QISKIT_CODE_POLICY_V48=PASS file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Home environment policy         : PASS     [BQCA v40] Home qiskit-v2x-env ready: Qiskit 2.5.1 BQCA_QISKIT_HOME_ENV_V40=PASS file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Hello World scope               : PASS     [BQCA v40] Home qiskit-v2x-env ready: Qiskit 2.5.1 BQCA_HELLO_WORLD_SCOPE_V41=PASS kind=code file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Result-output markers           : PASS     [BQCA v40] Home qiskit-v2x-env ready: Qiskit 2.5.1 BQCA_RESULT_OUTPUT_POLICY_V48_CODE=PASS file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+Notebook synchronization        : PASS     BQCA_NOTEBOOK_POLICY=PASS: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.ipynb
+Notebook secret scan            : PASS     BQCA_SECRET_SCAN_V48=PASS file=bob-quantum-store/shor-factoring-direct/shor-factoring-direct.ipynb
+----------------------------------------------------------------------------------------
+FINAL STATUS            : COMPLIANT
+========================================================================================

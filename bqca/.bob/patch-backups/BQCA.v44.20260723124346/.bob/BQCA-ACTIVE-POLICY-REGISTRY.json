@@ -1,0 +1,26 @@
+{
+  "schema": "bqca-active-policy-registry/v2",
+  "generated_utc": "2026-07-23T16:42:30.141376+00:00",
+  "active_authority": {
+    "version": "v44",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v44.md",
+    "policy_sha256": "867d2f8d062c2bab61f076b9fe73a676b4ec0f7e27664066f17cd930b5a2b2a2",
+    "orchestrator": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+    "doctor": ".bob/quantum-tools/bqca-policy-doctor.sh"
+  },
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "precedence": [
+    "BQCA-PRODUCTION-POLICY.md is the sole active natural-language authority.",
+    "Historical policy files are audit records only.",
+    "All public design, code, and execution routes must delegate through the canonical orchestrator.",
+    "Open Plan real-QPU job mode uses SamplerV2 or EstimatorV2 as appropriate and never Session."
+  ],
+  "versions": [
+    {
+      "version": "v44",
+      "status": "active authority",
+      "scope": "runtime assurance, drift/bypass prevention, and Open Plan SamplerV2-or-EstimatorV2 job-mode clarification"
+    }
+  ]
+}

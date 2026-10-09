@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "active_version": "v47",
+  "active_policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "versioned_policy_path": ".bob/BQCA-PRODUCTION-POLICY-v47.md",
+  "policy_sha256": "ebc89f9ab8225ed46ac7bd99ec2c5602794c6989d561b0279fd1c3a3450542e2",
+  "canonical_policy_sha256": "ebc89f9ab8225ed46ac7bd99ec2c5602794c6989d561b0279fd1c3a3450542e2",
+  "direct_execution_path": ".bob/quantum-tools/bqca-direct-execution.sh",
+  "orchestrator_path": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+  "doctor_path": ".bob/quantum-tools/bqca-policy-doctor.sh",
+  "repair_patch_path": "patches/BQCA/patch-BQCA.v47-update-2.sh",
+  "default_execution": "direct",
+  "formal_compliance": "optional-orchestrator",
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "active_authority": {
+    "version": "v47",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v47.md",
+    "policy_sha256": "ebc89f9ab8225ed46ac7bd99ec2c5602794c6989d561b0279fd1c3a3450542e2"
+  },
+  "disposition": {
+    "v44": "incorporated into v47 semantic assurance",
+    "v45": "incorporated into v47 direct execution",
+    "v46": "incorporated into v47 assurance repair",
+    "v47": "active authority"
+  }
+}

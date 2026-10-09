@@ -1,0 +1,10 @@
+Patch: BQCA-v50
+Created: 2026-08-13T16:05:16Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Launcher marker: BQCA-CRITICAL-PERMISSION-GUARD-v50
+Critical active-policy components: 11
+Protected project-root file excluded: .env
+Protected workload directories excluded: bob-quantum-designs and bob-quantum-store
+Protected home assets excluded: qiskit-v2x-env and .qiskit/qiskit-ibm.json
+Restore with:
+  patch-BQCA-v50.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-v50.20260813120516"

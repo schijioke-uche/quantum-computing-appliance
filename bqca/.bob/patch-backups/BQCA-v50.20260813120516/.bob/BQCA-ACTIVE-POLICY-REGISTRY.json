@@ -1,0 +1,120 @@
+{
+  "active_authority": {
+    "policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "version": "v48",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v48.md"
+  },
+  "active_policy_listener_path": ".bob/quantum-tools/bqca-active-policy-listener.sh",
+  "active_policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "active_policy_resolver_path": ".bob/quantum-tools/bqca_active_policy.py",
+  "active_policy_state_cache": ".bob/runtime/BQCA-active-policy-state.json",
+  "active_version": "v48",
+  "canonical_policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
+  "code_validator_path": ".bob/quantum-tools/qiskit-code-policy-check.py",
+  "compliance_reporting": {
+    "code_suffix": "-code-policy-compliance.txt",
+    "design_suffix": "-design-policy-compliance.txt",
+    "enabled": true,
+    "same_directory_as_artifact": true,
+    "title": "FORMAL POLICY COMPLIANCE REPORT",
+    "write_on_fail": true,
+    "write_on_pass": true
+  },
+  "default_execution": "direct",
+  "design_validator_path": ".bob/quantum-tools/qiskit-design-policy-check.py",
+  "direct_execution_path": ".bob/quantum-tools/bqca-direct-execution.sh",
+  "disposition": {
+    "v47": "incorporated into v48",
+    "v47-update-1": "incorporated into v48",
+    "v47-update-2": "incorporated into v48",
+    "v47-update-3": "incorporated into v48",
+    "v47-update-4": "incorporated into v48",
+    "v47-update-5": "superseded by update-6 and retained as history",
+    "v47-update-6": "incorporated into v48 local algorithm knowledgebase",
+    "v48": "active authority"
+  },
+  "doctor_path": ".bob/quantum-tools/bqca-policy-doctor.sh",
+  "dynamic_validator_path": ".bob/quantum-tools/bqca-dynamic-validator.py",
+  "execution_contract": {
+    "authoritative_result": "<source-stem>-result-output.txt",
+    "credential_leakage": "blocking",
+    "direct_policy_gaps": "warning-preserve-workload-exit-status",
+    "latest_run_mirror": "output.txt",
+    "live_terminal": true,
+    "method": "direct-synchronous-default",
+    "python": "$HOME/qiskit-v2x-env/bin/python",
+    "real_qpu_job_id_first_line": true,
+    "required_markers": [
+      "BQCA_EXECUTION_TARGET",
+      "BQCA_PLAN",
+      "BQCA_BACKEND",
+      "BQCA_JOB_ID",
+      "BQCA_RESULT",
+      "BQCA_FALLBACK_REASON"
+    ],
+    "result_status_values": [
+      "SUCCESS",
+      "FAILURE"
+    ],
+    "unbuffered": [
+      "PYTHONUNBUFFERED=1",
+      "python -u"
+    ]
+  },
+  "formal_compliance": "optional-orchestrator",
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "incorporated_patches": [
+    "patch-BQCA.v47.sh",
+    "patch-BQCA.v47-update-1.sh",
+    "patch-BQCA.v47-update-2.sh",
+    "patch-BQCA.v47-update-3.sh",
+    "patch-BQCA.v47-update-4.sh",
+    "patch-BQCA.v47-update-5.sh",
+    "patch-BQCA.v47-update-6.sh"
+  ],
+  "knowledgebase": {
+    "catalog_path": ".bob/quantum-tools/knowlegebase/bqca_quantum_algorithm_catalog.json",
+    "examples_path": ".bob/quantum-tools/knowlegebase/examples",
+    "mandatory_research_trace": false,
+    "mode": "offline-curated-algorithm-catalog",
+    "open_plan_primitives": [
+      "SamplerV2(mode=backend)",
+      "EstimatorV2(mode=backend)"
+    ],
+    "open_plan_session_allowed": false,
+    "overrides_central_policy": false,
+    "paid_plan_primitives": [
+      "SamplerV2(mode=session)",
+      "EstimatorV2(mode=session)"
+    ],
+    "policy_version": "BQCA.v48",
+    "qiskit_min_version": "2.5.0",
+    "real_qpu_first": true,
+    "required_for_intents": [
+      "design",
+      "code"
+    ],
+    "sublink_drilldown_required": false,
+    "supplemental_external_research_allowed": true,
+    "tool_path": ".bob/quantum-tools/bqca-quantum-kb.sh",
+    "update5_status": "superseded-by-update6",
+    "url_seed_access_required": false
+  },
+  "orchestrator_path": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+  "policy_compliance_controller_path": ".bob/quantum-tools/bqca-policy-compliance.sh",
+  "policy_compliance_watcher_path": ".bob/quantum-tools/bqca-policy-compliance-watcher.py",
+  "policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
+  "repair_patch_path": "patches/BQCA/patch-BQCA.v48-update-1.sh",
+  "schema_version": 4,
+  "updated_utc": "2026-07-27T02:37:38Z",
+  "validation_contract": {
+    "begin_marker": "<!-- BQCA-ACTIVE-VALIDATION-CONTRACT:BEGIN -->",
+    "end_marker": "<!-- BQCA-ACTIVE-VALIDATION-CONTRACT:END -->",
+    "policy_version": "v48",
+    "schema_version": 1,
+    "source": "embedded-in-active-policy"
+  },
+  "versioned_policy_path": ".bob/BQCA-PRODUCTION-POLICY-v48.md"
+}

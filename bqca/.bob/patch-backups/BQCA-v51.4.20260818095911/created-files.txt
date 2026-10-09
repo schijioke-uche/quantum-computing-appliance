@@ -1,0 +1,3 @@
+.bob/quantum-tools/bqca-chat-auto-approval.sh
+.bob/quantum-tools/bqca-chat-auto-approval-doctor.sh
+.bob/rules/01-bqca-trusted-chat-auto-approval.md

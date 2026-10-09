@@ -1,0 +1,17 @@
+========================================================================================
+BQCA v44 CANONICAL POLICY ASSURANCE REPORT
+========================================================================================
+Assessment time             : 2026-07-23T15:11:34.528152+00:00
+Canonical policy SHA-256    : 867d2f8d062c2bab61f076b9fe73a676b4ec0f7e27664066f17cd930b5a2b2a2
+Active policies             : BQCA-PRODUCTION-POLICY-v44.md, BQCA-PRODUCTION-POLICY.md
+Custom mode blocks          : 13
+Rules / Skills / Tools      : 11 / 12 / 27
+Legacy active blocks        : 0
+History hash failures       : 0
+Coverage errors             : 0
+Wrapper errors              : 0
+Syntax/permission errors    : 0
+Historical context isolated : YES
+----------------------------------------------------------------------------------------
+FINAL ASSURANCE STATUS      : PASS
+========================================================================================

@@ -1,0 +1,11 @@
+Patch: BQCA.v48-update-3
+Applied: 2026-07-29T01:31:27Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v48-update-3.20260728213115
+Purpose: diagnose Bob Shell maxTokens TypeError and repair BQCA custom-mode identity defects
+BQCA custom modes: unique and slug-valid
+Bob software modified: No
+User-global HOME/.bob modified: No
+Central BQCA policy modified: No
+Optional debug command: BQCA_BOB_DEBUG=1 ./xLaunchpad.sh
+Diagnostic report: .bob/patches-applied/BQCA.v48-update-3-maxTokens-diagnostic.txt

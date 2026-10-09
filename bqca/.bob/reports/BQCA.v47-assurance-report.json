@@ -1,0 +1,45 @@
+{
+  "version": "v47",
+  "root": "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent",
+  "checked_at": "2026-07-23T17:51:37Z",
+  "ok": false,
+  "errors": [
+    "stable and versioned v47 policies differ",
+    "registry active_version is not v47",
+    "registry active policy path is incorrect",
+    "registry versioned policy path is incorrect",
+    "registry canonical policy hash mismatch",
+    "registry orchestrator_path is incorrect",
+    "registry doctor_path is incorrect"
+  ],
+  "warnings": [],
+  "checks": {
+    "syntax_errors": [],
+    "permission_errors": [],
+    "python_errors": [],
+    "qiskit_environment_capabilities": [
+      "--help",
+      "-h",
+      "activation-command",
+      "check",
+      "ensure",
+      "environment-path",
+      "exec",
+      "hello-world",
+      "hello-world-if-present",
+      "python",
+      "python-path",
+      "run",
+      "run-notebook"
+    ],
+    "duplicate_mode_slugs": [],
+    "legacy_awareness_blocks": 0,
+    "surfaces": {
+      "modes": 13,
+      "rules": 11,
+      "skills": 12,
+      "tools": 29
+    },
+    "policy_sha256": "9323b896828e29e4430718fe3791dd69533d014c06045f18bd2dc3a8afd99633"
+  }
+}

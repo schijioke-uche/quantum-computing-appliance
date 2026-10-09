@@ -1,0 +1,134 @@
+========================================================================================
+BQCA v48 DIRECT QUANTUM EXECUTION RESULT OUTPUT
+========================================================================================
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Execution target        : SIMULATOR
+Source artifact         : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world.py
+Command                 : env PYTHONUNBUFFERED=1 /home/architect/qiskit-v2x-env/bin/python -u /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world.py
+Result output           : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world-result-output.txt
+Output mirror           : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/output.txt
+Started                 : 2026-08-19T15:46:12Z
+Completed               : 2026-08-19T15:47:00Z
+Duration seconds        : 48
+Exit status             : 0
+Plan                    : Open Plan
+Backend                 : aer_simulator
+Job ID                  : NOT REPORTED
+Fallback reason         : 'DataBin' object has no attribute 'meas'
+Notebook synchronization: PASS
+----------------------------------------------------------------------------------------
+COMPLETE TERMINAL OUTPUT (STDOUT + STDERR)
+----------------------------------------------------------------------------------------
+🌐 Live
+# BQCA_EXECUTION_CONTRACT: Using /home/architect/qiskit-v2x-env/bin/python
+# BQCA_V48_UPDATE4_RESULT_CAPTURE: bqca-direct-execution.sh run
+🌐 Live
+==================================================================================
+
+   ____   ______                                  __              
+  / __ \ / ____/____   ____   ____   ___   _____ / /_ ____   _____
+ / / / // /    / __ \ / __ \ / __ \ / _ \ / ___// __// __ \ / ___/
+/ /_/ // /___ / /_/ // / / // / / //  __// /__ / /_ / /_/ // /    
+\___\_\\____/ \____//_/ /_//_/ /_/ \___/ \___/ \__/ \____//_/     
+                                                                  
+🧠 Qiskit Connector® for Quantum Backend Realtime Connection
+
+
+⚛️ Connecting (Open Plan) to least-busy QPU...
+----------------------------------------------------------------------------------
+⚛️ Connected [Open Plan] → Realtime Least Busy QPU:: [ibm_fez]
+- ibm_fez
+- ibm_marrakesh
+- ibm_kingston
+
+🖥️ Least Busy QPU Now: [ibm_fez]
+🖥️ Version: 2
+🖥️ Qubits Count: 156
+🖥️ Backend [ibm_fez] ready for use: ✔️ Yes
+🖥️ Operational: Open Plan
+==================================================================================
+
+⚛️ Getting (Open Plan) Least-busy QPU Processor Info...
+----------------------------------------------------------------------------------
+
+--- 🔳  Processor Details for QConnector Least Busy Backend QPU: ibm_fez ---
+🦾 Processor Type: Heron
+🦾 Processor Revision: r2
+🦾 Processor status: 🟢 Online
+                        
+                        
+         .--:.          
+          : .-=-        
+          : -...        
+          :..:          
+           . .:         
+          :::::         
+         ::  .=         
+        :-:: .-         
+       :::::.-          
+      :-:::::-          
+      :=::: ::          
+      .--:  ::          
+            ::          
+            ::          
+            ..          
+                        
+                        
+                        
+🟢 Heron Quantum Processor
+==================================================================================
+
+🖥️ Your Plan: Open Plan
+🖥️ Least Busy QPU: ibm_fez
+🖥️ Backend Status: 🟢 Online
+┌─────────────────────────────────────────────────────┐
+│  IBM BQCA — Hello World (Bell State) · Qiskit 2.5+  │
+└─────────────────────────────────────────────────────┘
+  Policy   : BQCA v48
+  Plan     : Open Plan
+  Backend  : ibm_fez
+
+BQCA_EXECUTION_TARGET=SIMULATOR
+BQCA_PLAN=Open Plan
+BQCA_BACKEND=aer_simulator
+BQCA_FALLBACK_REASON='DataBin' object has no attribute 'meas'
+
+╔══════════════════════════════════════════════════╗
+║   🔬  BQCA Hello World — Bell State Result       ║
+╚══════════════════════════════════════════════════╝
+  Timestamp  : 2026-08-19T15:46:54.686432+00:00
+  Shots      : 1024
+  Qubits     : 2
+
+  Measurement counts:
+    |00⟩  ███████████████                   514  ( 50.2%)
+    |11⟩  ██████████████                    510  ( 49.8%)
+
+  Bell state fidelity: |00⟩ + |11⟩ sum = 1024 / 1024
+
+  Circuit PNG : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world-circuit.png
+  Results     : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world-result-output.txt
+
+BQCA_RESULT=SUCCESS
+----------------------------------------------------------------------------------------
+RESULT SUMMARY
+----------------------------------------------------------------------------------------
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Final execution target  : SIMULATOR
+Real-QPU job ID         : NOT REPORTED
+Backend                 : aer_simulator
+Plan                    : Open Plan
+Reported result status  : SUCCESS
+Reported result value   : NOT REPORTED
+Process exit status     : 0
+Completion date/time    : 2026-08-19T15:47:00Z
+Total duration          : 48 seconds
+Source artifact         : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world.py
+Result output           : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/hello-world-result-output.txt
+Compatibility output    : /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/bob-quantum-store/hello-world/output.txt
+Policy/Execution issue(s): NONE
+========================================================================================

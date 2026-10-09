@@ -1,0 +1,10 @@
+.bob/BQCA-PRODUCTION-POLICY-v46.md
+patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v45.md
+.bob/quantum-tools/bqca-direct-execution.sh
+.bob/patches-applied/BQCA.v46.txt
+.bob/patches-applied/BQCA.v46-assurance-report.txt
+.bob/BQCA-PRODUCTION-POLICY-v46.md
+patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v45.md
+.bob/quantum-tools/bqca-direct-execution.sh
+.bob/patches-applied/BQCA.v46.txt
+.bob/patches-applied/BQCA.v46-assurance-report.txt

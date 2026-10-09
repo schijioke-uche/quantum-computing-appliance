@@ -1,0 +1,141 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+#===============================================================================
+# @Author: Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist
+# @Description: Launchpad for interacting with IBM Bob Quantum Computing Agent (BQCA)
+# @AI Tool: IBM Bob Shell
+#===============================================================================
+
+# Load persistent Bob Shell version for appliance version-aware paths.
+if [[ -z "${BOB_VERSION:-}" ]]; then
+  _BOB_VERSION_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+  if [[ -f "${_BOB_VERSION_SCRIPT_DIR}/bob-version.sh" ]]; then
+    # shellcheck source=/dev/null
+    source "${_BOB_VERSION_SCRIPT_DIR}/bob-version.sh"
+  fi
+  unset _BOB_VERSION_SCRIPT_DIR
+fi
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+source "${SCRIPT_DIR}/xdg.sh" --check
+
+set -a
+source "${SCRIPT_DIR}/.env"
+set +a
+
+#===============================================================================
+# BQCA-NOTEBOOK-AUTOGEN-v37:BEGIN
+#
+# Production enforcement:
+# Automatically create/refresh .ipynb after every .py implementation written
+# under the BQCA implementation store.
+#
+# Exit cleanup is intentionally SILENT.
+#===============================================================================
+
+_BQCA_NOTEBOOK_AUTOGEN_TOOL="${SCRIPT_DIR}/.bob/quantum-tools/notebook-autogen.sh"
+_BQCA_NOTEBOOK_STORE="${QCA_STORE_DIR:-${SCRIPT_DIR}/bob-quantum-store}"
+
+if [[ "${_BQCA_NOTEBOOK_STORE}" != /* ]]; then
+    _BQCA_NOTEBOOK_STORE="${SCRIPT_DIR}/${_BQCA_NOTEBOOK_STORE}"
+fi
+
+if [[ -x "${_BQCA_NOTEBOOK_AUTOGEN_TOOL}" ]]; then
+
+    "${_BQCA_NOTEBOOK_AUTOGEN_TOOL}" start \
+        --store "${_BQCA_NOTEBOOK_STORE}"
+
+    _bqca_notebook_autogen_cleanup() {
+
+        # Sweep pending notebook generation requests silently.
+        "${_BQCA_NOTEBOOK_AUTOGEN_TOOL}" sweep \
+            --store "${_BQCA_NOTEBOOK_STORE}" \
+            >/dev/null 2>&1 || true
+
+        # Stop the watcher silently.
+        "${_BQCA_NOTEBOOK_AUTOGEN_TOOL}" stop \
+            >/dev/null 2>&1 || true
+    }
+
+    trap _bqca_notebook_autogen_cleanup EXIT
+
+else
+    printf '[BQCA][ERROR] Required notebook auto-generation tool is missing: %s\n' \
+        "${_BQCA_NOTEBOOK_AUTOGEN_TOOL}" >&2
+    exit 1
+fi
+
+#===============================================================================
+# BQCA-NOTEBOOK-AUTOGEN-v37:END
+#===============================================================================
+
+
+# Bob Instance ID:
+#------------------------------------
+: "${BOB_INSTANCE_ID:?BOB_INSTANCE_ID is not set in the .env}"
+
+# [Bob Instance ID and API Key (Pro Plus)]:
+#--------------------------------------------
+: "${BOB_API_KEY:?BOB_API_KEY is not set in the .env}"
+
+# Quantum Account Token:
+#------------------------------------------
+: "${IQP_API_TOKEN:?IQP_API_TOKEN is not set in the .env}"
+
+# Channels:
+#------------------------------------------
+: "${OPEN_PLAN_CHANNEL:?OPEN_PLAN_CHANNEL is not set in the .env}"
+: "${PAID_PLAN_CHANNEL:?PAID_PLAN_CHANNEL is not set in the .env}"
+
+# API Access:
+#-------------------------------------
+: "${IQP_API_URL:?IQP_API_URL is not set in the .env}"
+: "${IQP_RUNTIME_BACKEND_URL:?IQP_RUNTIME_BACKEND_URL is not set in the .env}"
+
+# Quantum Url:
+#-------------------------------------
+: "${CLOUD_API_URL:?CLOUD_API_URL is not set in the .env}"
+: "${QUANTUM_API_URL:?QUANTUM_API_URL is not set in the .env}"
+
+# Instance CRN:
+#-------------------------------------
+: "${OPEN_PLAN_INSTANCE:?OPEN_PLAN_INSTANCE is not set in the .env. Go to https://quantum.cloud.ibm.com , sign in and copy the CRN of your Open plan instance.}"
+: "${PAID_PLAN_INSTANCE:?PAID_PLAN_INSTANCE is not set in the .env}"
+
+# Default (Open plan) - free:
+#--------------------------------------------------
+: "${OPEN_PLAN_NAME:?OPEN_PLAN_NAME is not set in the .env}"
+
+# Optional (Upgrade) - Pay-As-You-Go:
+#--------------------------------------------------
+: "${PAYGO_PLAN_NAME:?PAYGO_PLAN_NAME is not set in the .env}"
+
+# Optional (Upgrade) - Flex:
+#--------------------------------------------------
+: "${FLEX_PLAN_NAME:?FLEX_PLAN_NAME is not set in the .env}"
+
+# Optional (Upgrade) - Premium:
+#--------------------------------------------------
+: "${PREMIUM_PLAN_NAME:?PREMIUM_PLAN_NAME is not set in the .env}"
+
+# Optional (Upgrade) - Dedicated:
+#--------------------------------------------------
+: "${DEDICATED_PLAN_NAME:?DEDICATED_PLAN_NAME is not set in the .env}"
+
+# Switch "on" one plan: Use one or the other at a time.
+#--------------------------------------------------
+: "${OPEN_PLAN:?OPEN_PLAN is not set in the .env}"
+: "${FLEX_PLAN:?FLEX_PLAN is not set in the .env}"
+: "${PAYGO_PLAN:?PAYGO_PLAN is not set in the .env}"
+: "${PREMIUM_PLAN:?PREMIUM_PLAN is not set in the .env}"
+: "${DEDICATED_PLAN:?DEDICATED_PLAN is not set in the .env}"
+
+#===============================================================================
+# @Author: Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist
+# @Description: Launchpad for interacting with IBM Bob Quantum Computing Agent (BQCA)
+# @Version: v${BOB_VERSION}
+#===============================================================================
+
+source "${SCRIPT_DIR}/bob-quantum-v${BOB_VERSION}.sh"

@@ -1,0 +1,8 @@
+Patch: BQCA.v47-update-3
+Applied: 2026-07-24T14:31:50Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-3.20260724103146
+Active policy: BQCA.v47
+Production behavior: exact live direct-execution report in <source-stem>-result-output.txt and output.txt
+Direct-mode contract gaps: recorded as warnings without overriding a successful workload exit status
+Protected assets: excluded and unchanged

@@ -1,0 +1,5 @@
+.bob/patches-applied/BQCA.v47-assurance-report.txt
+.bob/patches-applied/BQCA.v47-update-2.txt
+patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v44.md
+patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v45-recovered-20260723143111.md
+patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v46.md

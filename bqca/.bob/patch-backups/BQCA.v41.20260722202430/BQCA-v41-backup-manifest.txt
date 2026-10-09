@@ -1,0 +1,9 @@
+Patch: BQCA.v41
+Created: 2026-07-23T00:24:37Z
+Appliance root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Purpose: Hello World is request-scoped and prohibited in non-Hello-World designs/code.
+Environment file intentionally excluded: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.env
+Home Qiskit environment intentionally excluded: /home/architect/qiskit-v2x-env
+Legacy project environment intentionally excluded: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/qiskit-v2x-env
+Restore with:
+  patch-BQCA.v41.sh --target "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent" --rollback "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v41.20260722202430"

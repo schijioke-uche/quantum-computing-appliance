@@ -1,0 +1,14 @@
+Patch: BQCA.v42
+Applied: 2026-07-23T01:08:26Z
+Root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Backup: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v42.20260722210817
+Prerequisite: BQCA.v41
+Result filename: <source-stem>-result-output.txt
+Result location: same directory as executed .py or .ipynb
+Captured stream: complete combined stdout and stderr, including Qiskit Connector output
+Real-QPU requirement: actual JOB ID on the first line
+Summary requirement: result summary at bottom with execution success and completion metadata
+Runtime enforcement: .bob/quantum-tools/qiskit-v2x-environment.sh run/run-notebook
+Environment file: excluded and unchanged
+Home runtime environment: excluded and unchanged by installer
+Legacy project runtime environment: excluded and unchanged by installer

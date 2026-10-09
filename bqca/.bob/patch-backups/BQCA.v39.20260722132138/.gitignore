@@ -1,0 +1,27 @@
+# Files containing sensitive API keys
+bob-cli-direct-auth.sh
+WSL-SETUP-GUIDE.md
+wsl-verify-auth.sh
+CLI-NO-BROWSER-AUTH.md
+bob-no-browser.sh
+bob-no-browser-auth.sh
+configure-bob-cli.sh
+direct-bob-api.sh
+wsl-configure-bob.sh
+fix-warnings-now.sh
+*.log
+.env
+*.tfvars
+*.tfvars.example
+__pycache__/
+node_modules/*
+package-lock.json
+package.json 
+*.docx
+*docx.js
+scripts/*section.js
+scripts/*.js
+# IBM Bob runtime process files
+.bob/runtime/*.pid
+BOB-ID1
+BOB-ID2

@@ -1,0 +1,4 @@
+bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design-policy-compliance.txt
+bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design-policy-compliance.txt
+bob-quantum-store/shor-factoring-direct/shor-factoring-direct-policy-compliance.txt
+bob-quantum-store/test/hello-world-policy-compliance.txt

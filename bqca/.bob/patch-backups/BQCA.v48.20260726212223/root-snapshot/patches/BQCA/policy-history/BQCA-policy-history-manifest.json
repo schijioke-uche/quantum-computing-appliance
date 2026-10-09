@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-07-23T18:31:12.506822+00:00",
+  "active_version": "v47",
+  "entries": [
+    {
+      "name": "BQCA-AUTOMATIC-NOTEBOOK-POLICY-v35.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v35.md",
+      "sha256": "d53f860b6c6c904477a42bf1256567d2cd88aaea40b1fc18cc1c961e2e240bac",
+      "size_bytes": 2079,
+      "status": "duplicate-superseded"
+    },
+    {
+      "name": "BQCA-AUTOMATIC-NOTEBOOK-POLICY-v36.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v36.md",
+      "sha256": "fb339e331acdab8751975e803b26bcfea63a1277b5b68ec803cc8792fd663dba",
+      "size_bytes": 2079,
+      "status": "duplicate-superseded"
+    },
+    {
+      "name": "BQCA-AUTOMATIC-NOTEBOOK-POLICY-v37.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v37.md",
+      "sha256": "d3921bff97ce5049c889c450ab6498f3b486c889923583234f68cbbe7426377f",
+      "size_bytes": 1323,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-HELLO-WORLD-SCOPE-POLICY-v41.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-HELLO-WORLD-SCOPE-POLICY-v41.md",
+      "sha256": "b7531b3bef9e3abf5cf6ca06185bb723b9f6c2be92c89fa0972e8dc40481860c",
+      "size_bytes": 1479,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v30.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v30.md",
+      "sha256": "1da761128b39ffd45d4d61dec235ed6d62af00c05939b35bfab84d8117d674d7",
+      "size_bytes": 2994,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v43.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v43.md",
+      "sha256": "682d8e8e84ef96cd6dd81aa279e0190bc9d982e2956e3b05c432e97e06061220",
+      "size_bytes": 8570,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v44.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v44.md",
+      "sha256": "867d2f8d062c2bab61f076b9fe73a676b4ec0f7e27664066f17cd930b5a2b2a2",
+      "size_bytes": 9540,
+      "status": "incorporated-into-v47"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v45-recovered-20260723143111.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v45-recovered-20260723143111.md",
+      "sha256": "0ecc6f490ef14b043ee04417bed6cf951233b0242bcb60f098f38bb479140de4",
+      "size_bytes": 10786,
+      "status": "incorporated-into-v47"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v45.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v45.md",
+      "sha256": "5288c161aa5b07bc57e7e37f3e4b53ea582e383202e1b2dadc49e9153c53edf2",
+      "size_bytes": 10949,
+      "status": "incorporated-into-v47"
+    },
+    {
+      "name": "BQCA-PRODUCTION-POLICY-v46.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v46.md",
+      "sha256": "cb07f7989aeeae5b034ad17838bba547d4e9b57748357788a39030ee4e3ce486",
+      "size_bytes": 12060,
+      "status": "incorporated-into-v47"
+    },
+    {
+      "name": "BQCA-QISKIT-CONFIGURATION-POLICY-v38.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONFIGURATION-POLICY-v38.md",
+      "sha256": "bcc4dd28f7d54ded07cf6831376a60ac12af9593eebfe413ea475d908612f8eb",
+      "size_bytes": 2259,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v33.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v33.md",
+      "sha256": "5bc678628c0fbafacd947a9be32e7d63cd5917da52e9fe705359da5f4731dfb8",
+      "size_bytes": 2917,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v34.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v34.md",
+      "sha256": "b695b4726a1ae101e0cf28e0aab521b4ec265a9d00b18e5fa44a9611c2970a98",
+      "size_bytes": 3582,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-QISKIT-ENV-SCOPE-POLICY-v39-update-1.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-ENV-SCOPE-POLICY-v39-update-1.md",
+      "sha256": "ef1fb155024e151ff193f755b398e84f18cf0360562c88fc5393b68cdb34d03f",
+      "size_bytes": 693,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-QISKIT-EXECUTION-POLICY-v39.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-EXECUTION-POLICY-v39.md",
+      "sha256": "73d7b4ebaabfe2768f9df27d42206cea961426eb378cab3b8b4cadc8eb263965",
+      "size_bytes": 2079,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-QISKIT-HOME-ENV-POLICY-v40.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-HOME-ENV-POLICY-v40.md",
+      "sha256": "0ad44f2af08272028b92994b1ec99e4563d6016d84bfd98d6b5c36959a384382",
+      "size_bytes": 782,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-RESULT-OUTPUT-POLICY-v42.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-RESULT-OUTPUT-POLICY-v42.md",
+      "sha256": "3fe135407f738d8734fe10221849203f291af470242e9e428ce1c17d969385e7",
+      "size_bytes": 2478,
+      "status": "historical-audit"
+    },
+    {
+      "name": "BQCA-policy-timeline.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-policy-timeline.md",
+      "sha256": "d56f096112233c0a61901f1f743bff3dd73f18a558ebeed37d2e42566479e033",
+      "size_bytes": 406,
+      "status": "historical-audit"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "active_authority": {
+    "policy_sha256": "df741e99c48cbf27c38d52d33a33522004b6878ec461c98e5e965fc12edaa744",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "version": "v47",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v47.md"
+  },
+  "active_policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "active_version": "v47",
+  "algorithm_knowledgebase_path": ".bob/quantum-tools/knowlegebase/bqca_quantum_algorithm_catalog.json",
+  "canonical_policy_sha256": "df741e99c48cbf27c38d52d33a33522004b6878ec461c98e5e965fc12edaa744",
+  "default_execution": "direct",
+  "direct_execution_path": ".bob/quantum-tools/bqca-direct-execution.sh",
+  "direct_result_contract": {
+    "canonical_output": "<source-stem>-result-output.txt",
+    "compatibility_output": "output.txt",
+    "direct_contract_gaps_non_blocking": true,
+    "live_terminal": true,
+    "real_qpu_job_id_first_line": true,
+    "version": "v47-update-3"
+  },
+  "disposition": {
+    "v44": "incorporated into v47 semantic assurance",
+    "v45": "incorporated into v47 direct execution",
+    "v46": "incorporated into v47 assurance repair",
+    "v47": "active authority",
+    "v47-update-5": "superseded by v47-update-6 local algorithm knowledgebase",
+    "v47-update-6": "active supplementary algorithm knowledgebase"
+  },
+  "doctor_path": ".bob/quantum-tools/bqca-policy-doctor.sh",
+  "execution_contract": {
+    "authoritative_result": "<source-stem>-result-output.txt",
+    "credential_leakage": "blocking",
+    "direct_policy_gaps": "warning-preserve-workload-exit-status",
+    "latest_run_mirror": "output.txt",
+    "python": "$HOME/qiskit-v2x-env/bin/python",
+    "required_markers": [
+      "BQCA_EXECUTION_TARGET",
+      "BQCA_PLAN",
+      "BQCA_BACKEND",
+      "BQCA_JOB_ID",
+      "BQCA_RESULT",
+      "BQCA_FALLBACK_REASON"
+    ],
+    "result_status_values": [
+      "SUCCESS",
+      "FAILURE"
+    ],
+    "unbuffered": [
+      "PYTHONUNBUFFERED=1",
+      "python -u"
+    ]
+  },
+  "execution_policy_update": "BQCA.v47-update-4",
+  "formal_compliance": "optional-orchestrator",
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "knowledgebase": {
+    "catalog_path": ".bob/quantum-tools/knowlegebase/bqca_quantum_algorithm_catalog.json",
+    "examples_path": ".bob/quantum-tools/knowlegebase/examples",
+    "mandatory_research_trace": false,
+    "mode": "offline-curated-algorithm-catalog",
+    "open_plan_primitives": [
+      "SamplerV2(mode=backend)",
+      "EstimatorV2(mode=backend)"
+    ],
+    "open_plan_session_allowed": false,
+    "overrides_central_policy": false,
+    "paid_plan_primitives": [
+      "SamplerV2(mode=session)",
+      "EstimatorV2(mode=session)"
+    ],
+    "policy_update": "BQCA.v47-update-6",
+    "qiskit_min_version": "2.5.0",
+    "real_qpu_first": true,
+    "required_for_intents": [
+      "design",
+      "code"
+    ],
+    "sublink_drilldown_required": false,
+    "supersedes": "BQCA.v47-update-5",
+    "supplemental_external_research_allowed": true,
+    "tool_path": ".bob/quantum-tools/bqca-quantum-kb.sh",
+    "url_seed_access_required": false
+  },
+  "knowledgebase_tool_path": ".bob/quantum-tools/bqca-quantum-kb.sh",
+  "orchestrator_path": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+  "policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_sha256": "df741e99c48cbf27c38d52d33a33522004b6878ec461c98e5e965fc12edaa744",
+  "repair_patch_path": "patches/BQCA/patch-BQCA.v47-update-4.sh",
+  "schema_version": 2,
+  "versioned_policy_path": ".bob/BQCA-PRODUCTION-POLICY-v47.md"
+}

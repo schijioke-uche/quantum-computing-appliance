@@ -1,0 +1,15 @@
+{
+  "version": "v47",
+  "stable_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "versioned_path": ".bob/BQCA-PRODUCTION-POLICY-v47.md",
+  "sha256": "9323b896828e29e4430718fe3791dd69533d014c06045f18bd2dc3a8afd99633",
+  "updated": "2026-07-23T17:32:03Z",
+  "previous_version": "v46",
+  "changes": [
+    "Combined v45 direct execution workflow with v46 semantic assurance",
+    "Section 15: Direct execution workflow (from v45)",
+    "Section 16: Semantic policy assurance (from v46)",
+    "Updated all version references to v47",
+    "Preserved dual-result contract and bqca-direct-execution.sh default"
+  ]
+}

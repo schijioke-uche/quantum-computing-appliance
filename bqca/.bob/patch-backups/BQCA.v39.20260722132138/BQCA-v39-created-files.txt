@@ -1,0 +1,3 @@
+.bob/BQCA-QISKIT-EXECUTION-POLICY-v39.md
+.bob/quantum-tools/qiskit-v2x-environment.sh
+.bob/patches-applied/BQCA.v39.txt

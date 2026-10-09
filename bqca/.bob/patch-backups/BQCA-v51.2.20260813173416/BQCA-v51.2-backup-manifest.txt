@@ -1,0 +1,7 @@
+Patch: BQCA-v51.2
+Created: 2026-08-13T21:34:17Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Managed paths: managed-paths.txt
+Protected: .env, custom_modes.yaml content, active policy, governed stores, HOME/.bob, HOME/qiskit-v2x-env, HOME/.qiskit/qiskit-ibm.json
+Restore with:
+  patch-BQCA-v51.2.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-v51.2.20260813173416"

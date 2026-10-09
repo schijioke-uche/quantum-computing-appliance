@@ -1,0 +1,24 @@
+BQCA v47 Patch Applied
+======================
+Date: 2026-07-23T17:32:03Z
+Patch: patch-BQCA.v47.sh
+Previous Version: v46
+New Version: v47
+
+Changes:
+- Combined v45 direct execution workflow (Section 15)
+- Retained v46 semantic assurance (Section 16)
+- Updated all custom modes, rules, skills, and tools to v47
+- Synchronized stable and versioned policy files
+- Updated policy registry with new SHA-256
+
+Key Features:
+- Direct execution is default (bqca-direct-execution.sh)
+- Orchestrator optional for formal compliance
+- Live terminal output + dual-result contract
+- Semantic assurance for drift detection
+- Real-time feedback for development
+
+Backup Location: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47.20260723173202
+
+Status: SUCCESS

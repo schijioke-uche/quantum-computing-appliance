@@ -1,0 +1,5 @@
+.bob/BQCA-RESULT-OUTPUT-POLICY-v42.md
+.bob/quantum-tools/qiskit-result-output.py
+.bob/quantum-tools/qiskit-result-output.sh
+.bob/quantum-tools/qiskit-result-output-policy-check.py
+.bob/patches-applied/BQCA.v42.txt

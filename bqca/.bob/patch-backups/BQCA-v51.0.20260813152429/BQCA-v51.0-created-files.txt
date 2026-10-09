@@ -1,0 +1,8 @@
+AGENTS.md
+.bob/settings.json
+.bob/hooks/bqca-session-context.sh
+.bob/hooks/bqca-user-prompt-context.py
+.bob/rules/00-bqca-core.md
+.bob/quantum-tools/bqca-bob2-dna-doctor.py
+.bob/quantum-tools/bqca-bob2-dna-doctor.sh
+.bob/patches-applied/BQCA-v51.0.txt

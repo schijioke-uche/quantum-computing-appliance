@@ -1,0 +1,37 @@
+{
+  "version": "v46",
+  "root": "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent",
+  "checked_at": "2026-07-23T17:19:42Z",
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "checks": {
+    "syntax_errors": [],
+    "permission_errors": [],
+    "python_errors": [],
+    "qiskit_environment_capabilities": [
+      "--help",
+      "-h",
+      "activation-command",
+      "check",
+      "ensure",
+      "environment-path",
+      "exec",
+      "hello-world",
+      "hello-world-if-present",
+      "python",
+      "python-path",
+      "run",
+      "run-notebook"
+    ],
+    "duplicate_mode_slugs": [],
+    "legacy_awareness_blocks": 0,
+    "surfaces": {
+      "modes": 13,
+      "rules": 11,
+      "skills": 12,
+      "tools": 29
+    },
+    "policy_sha256": "cb07f7989aeeae5b034ad17838bba547d4e9b57748357788a39030ee4e3ce486"
+  }
+}

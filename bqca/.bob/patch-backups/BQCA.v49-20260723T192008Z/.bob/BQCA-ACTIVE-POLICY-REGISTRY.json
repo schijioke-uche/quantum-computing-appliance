@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "active_version": "v48",
+  "active_policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_path": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "versioned_policy_path": ".bob/BQCA-PRODUCTION-POLICY-v48.md",
+  "policy_sha256": "1897356b4b31d209056bc3fe46c48d3afaa91432ab4fc1fbd1b85664f0417252",
+  "canonical_policy_sha256": "ebc89f9ab8225ed46ac7bd99ec2c5602794c6989d561b0279fd1c3a3450542e2",
+  "direct_execution_path": ".bob/quantum-tools/bqca-direct-execution.sh",
+  "orchestrator_path": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+  "doctor_path": ".bob/quantum-tools/bqca-policy-doctor.sh",
+  "repair_patch_path": "patches/BQCA/patch-BQCA.v47-update-2.sh",
+  "default_execution": "direct",
+  "formal_compliance": "optional-orchestrator",
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "active_authority": {
+    "version": "v47",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v47.md",
+    "policy_sha256": "ebc89f9ab8225ed46ac7bd99ec2c5602794c6989d561b0279fd1c3a3450542e2"
+  },
+  "disposition": {
+    "v44": "incorporated into v47 semantic assurance",
+    "v45": "incorporated into v47 direct execution",
+    "v46": "incorporated into v47 assurance repair",
+    "v47": "active authority"
+  },
+  "last_updated": "2026-07-23T19:14:44Z",
+  "patch_applied": "patch-BQCA.v48.sh",
+  "previous_version": "v47",
+  "changes": [
+    "Restored v45 direct execution workflow as the canonical default",
+    "Restored v46 semantic policy assurance and drift-repair language",
+    "Promoted a new stable/versioned v48 canonical policy pair",
+    "Preserved governed dual-result contract and direct execution wrapper guidance"
+  ]
+}

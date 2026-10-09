@@ -1,0 +1,9 @@
+Patch: BQCA.v41
+Applied: 2026-07-23T00:24:38Z
+Root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Backup: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v41.20260722202430
+Production behavior: Hello World is prohibited in non-Hello-World designs/code and allowed only for an explicit Hello World request
+Coverage: all custom modes, rules, skills, and supported quantum tools
+Environment file: excluded and unchanged
+Home environment: excluded and unchanged (/home/architect/qiskit-v2x-env)
+Legacy project environment: excluded and unchanged (/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/qiskit-v2x-env)

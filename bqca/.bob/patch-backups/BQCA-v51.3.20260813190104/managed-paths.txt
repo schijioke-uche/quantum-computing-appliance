@@ -1,0 +1,10 @@
+bob-quantum-v2.0.1.sh
+bob-auth.sh
+.env.example
+README.md
+AGENTS.md
+.bob/rules/00-bqca-core.md
+.bob/BQCA-ACTIVE-POLICY-REGISTRY.json
+.bob/quantum-tools/bqca-bob2-resume.py
+.bob/quantum-tools/bqca-bob2-resume.sh
+.bob/patches-applied/BQCA-v51.3.txt

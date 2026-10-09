@@ -1,0 +1,16 @@
+BQCA v47 Backup Manifest
+========================
+Backup Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+Patch Version: v47
+Previous Version: v46
+
+Backed Up Files:
+- .bob/BQCA-PRODUCTION-POLICY.md
+- .bob/BQCA-PRODUCTION-POLICY-v46.md
+
+Changes:
+- Combined v45 direct execution workflow (Section 15)
+- Retained v46 semantic assurance (Section 16)
+- Updated all version references from v46 to v47
+- Preserved dual-result contract from v45
+- Maintained bqca-direct-execution.sh as default

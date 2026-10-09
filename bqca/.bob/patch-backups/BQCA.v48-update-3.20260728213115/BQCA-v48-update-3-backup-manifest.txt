@@ -1,0 +1,6 @@
+Patch: BQCA.v48-update-3
+Created: 2026-07-29T01:31:17Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Protected assets excluded: .env, workload stores, HOME/.bob, HOME/qiskit-v2x-env, HOME/.qiskit/qiskit-ibm.json
+Restore with:
+  patch-BQCA.v48-update-3.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v48-update-3.20260728213115"

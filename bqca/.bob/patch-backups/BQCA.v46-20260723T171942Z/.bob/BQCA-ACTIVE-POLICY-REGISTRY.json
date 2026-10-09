@@ -1,0 +1,35 @@
+{
+  "schema": "bqca-active-policy-registry/v2",
+  "generated_utc": "2026-07-23T17:17:53.074792+00:00",
+  "active_authority": {
+    "version": "v46",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v46.md",
+    "policy_sha256": "0ecc6f490ef14b043ee04417bed6cf951233b0242bcb60f098f38bb479140de4",
+    "orchestrator": ".bob/quantum-tools/bqca-policy-orchestrator.sh",
+    "doctor": ".bob/quantum-tools/bqca-policy-doctor.sh",
+    "default_execution": ".bob/quantum-tools/bqca-direct-execution.sh",
+    "formal_orchestrator": ".bob/quantum-tools/bqca-policy-orchestrator.sh"
+  },
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "precedence": [
+    "BQCA-PRODUCTION-POLICY.md is the sole active natural-language authority.",
+    "Historical policy files are audit records only.",
+    "Open Plan real-QPU job mode uses SamplerV2 or EstimatorV2 as appropriate and never Session.",
+    "Direct execution is the default for development/testing, interactive exploration, debugging, and quick experiments.",
+    "The canonical orchestrator is optional and explicit for formal documentation, production deployment, and audit requirements.",
+    "Execution output is mirrored live to the terminal and finalized in both <source-stem>-result-output.txt and output.txt."
+  ],
+  "versions": [
+    {
+      "version": "v44",
+      "status": "active authority",
+      "scope": "runtime assurance, drift/bypass prevention, and Open Plan SamplerV2-or-EstimatorV2 job-mode clarification"
+    },
+    {
+      "version": "v46",
+      "status": "active authority",
+      "scope": "direct execution default, optional formal orchestration, live dual result recording"
+    }
+  ]
+}

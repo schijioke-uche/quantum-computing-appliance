@@ -1,0 +1,4 @@
+.bob/BQCA-HELLO-WORLD-SCOPE-POLICY-v41.md
+.bob/quantum-tools/qiskit-hello-world-scope-check.py
+.bob/quantum-tools/qiskit-hello-world-design-template.md
+.bob/patches-applied/BQCA.v41.txt

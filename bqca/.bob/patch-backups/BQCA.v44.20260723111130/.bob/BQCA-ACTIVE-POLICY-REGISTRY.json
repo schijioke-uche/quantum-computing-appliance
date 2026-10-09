@@ -1,0 +1,93 @@
+{
+  "schema": "bqca-active-policy-registry/v1",
+  "generated_utc": "2026-07-23T14:13:09.005511+00:00",
+  "active_authority": {
+    "version": "v43",
+    "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+    "versioned_policy": ".bob/BQCA-PRODUCTION-POLICY-v43.md",
+    "orchestrator": ".bob/quantum-tools/bqca-policy-orchestrator.sh"
+  },
+  "historical_policy_directory": "patches/BQCA/policy-history",
+  "precedence": [
+    "BQCA-PRODUCTION-POLICY.md is the sole active natural-language authority.",
+    "Historical policy files are audit records only.",
+    "Existing validators are implementation modules invoked in v43 order, not independent policy sources."
+  ],
+  "versions": [
+    {
+      "version": "v30",
+      "status": "incorporated",
+      "scope": "artifact routing, security, design/code separation"
+    },
+    {
+      "version": "v31",
+      "status": "superseded",
+      "scope": "early Connector policy superseded by v33/v34"
+    },
+    {
+      "version": "v32",
+      "status": "incorporated",
+      "scope": "Connector skill/tool rollout retained through later policies"
+    },
+    {
+      "version": "v33",
+      "status": "incorporated",
+      "scope": "strict Qiskit Connector code requirements"
+    },
+    {
+      "version": "v34",
+      "status": "incorporated",
+      "scope": "textual-only Connector design clarification"
+    },
+    {
+      "version": "v35",
+      "status": "duplicate",
+      "scope": "notebook guidance superseded by v37"
+    },
+    {
+      "version": "v36",
+      "status": "duplicate",
+      "scope": "notebook guidance superseded by v37"
+    },
+    {
+      "version": "v37",
+      "status": "incorporated",
+      "scope": "runtime notebook watcher and synchronization"
+    },
+    {
+      "version": "v38",
+      "status": "incorporated",
+      "scope": "qiskit-ibm.json configuration gate"
+    },
+    {
+      "version": "v39",
+      "status": "partially incorporated",
+      "scope": "CODE intent and plan-aware execution retained; narrower later policies supersede environment/Hello World wording"
+    },
+    {
+      "version": "v39-update-1",
+      "status": "superseded in scope",
+      "scope": "environment scope refined by v40; corrected test location retained through v41"
+    },
+    {
+      "version": "v40",
+      "status": "incorporated",
+      "scope": "home-scoped qiskit-v2x-env"
+    },
+    {
+      "version": "v41",
+      "status": "incorporated",
+      "scope": "request-scoped Hello World behavior"
+    },
+    {
+      "version": "v42",
+      "status": "incorporated",
+      "scope": "professional execution result-output contract"
+    },
+    {
+      "version": "v43",
+      "status": "active authority",
+      "scope": "canonical policy, precedence, orchestration, and completion gate"
+    }
+  ]
+}

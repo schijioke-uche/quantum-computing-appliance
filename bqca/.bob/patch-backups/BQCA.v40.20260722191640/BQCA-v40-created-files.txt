@@ -1,0 +1,3 @@
+.bob/BQCA-QISKIT-HOME-ENV-POLICY-v40.md
+.bob/quantum-tools/qiskit-home-env-policy-check.py
+.bob/patches-applied/BQCA.v40.txt

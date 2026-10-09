@@ -1,0 +1,12 @@
+Patch: BQCA-v51.3
+Applied: 2026-08-13T23:01:04Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/.bob/patch-backups/BQCA-v51.3.20260813190104
+Bob 2.x launcher: bob-quantum-v2.0.1.sh
+Option 5 mode: quantum-qiskit-connector
+Task selection: latest non-authentication user task by exact task ID
+Authentication probe: isolated temporary workspace
+Bob 1.x resume: preserved
+Private .env: excluded and unchanged
+custom_modes.yaml: preserved byte-for-byte
+Active central policy: preserved byte-for-byte

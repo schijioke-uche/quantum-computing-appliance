@@ -1,0 +1,15 @@
+BQCA v45 Backup Manifest
+========================
+Backup Date: $(date -u +%Y-%m-%dT%H:%M:%SZ)
+Patch Version: v45
+Previous Version: v44
+
+Backed Up Files:
+- .bob/BQCA-PRODUCTION-POLICY.md
+- .bob/BQCA-PRODUCTION-POLICY-v44.md
+
+Changes:
+- Updated Section 12 (Execution) to make direct execution default
+- Made orchestrator optional for formal compliance only
+- Added Section 15 for direct execution workflow
+- Updated all references to execution methods

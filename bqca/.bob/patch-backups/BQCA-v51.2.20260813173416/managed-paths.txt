@@ -1,0 +1,15 @@
+xLaunchpad.sh
+bob-quantum-v2.0.1.sh
+.env.example
+.bob/BQCA-ACTIVE-POLICY-REGISTRY.json
+.bob/quantum-tools/bqca-custom-mode-rules.py
+.bob/quantum-tools/bqca-custom-mode-rules.sh
+.bob/quantum-tools/bqca-bob2-dna-doctor.py
+.bob/quantum-tools/bqca-bob2-dna-doctor.sh
+.bob/quantum-tools/bqca-bob-mode-doctor.py
+.bob/quantum-tools/bqca-bob-mode-doctor.sh
+.bob/quantum-tools/bqca-policy-doctor.py
+.bob/quantum-tools/bqca-policy-doctor.sh
+.bob/quantum-tools/bqca-active-policy-listener.sh
+.bob/rules-quantum-qiskit-connector
+.bob/patches-applied/BQCA-v51.2.txt

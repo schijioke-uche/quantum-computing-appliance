@@ -1,0 +1,10 @@
+Patch: BQCA-v50
+Applied: 2026-08-13T16:05:17Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-v50.20260813120516
+Behavior: repair and continuously enforce safe permissions for active-policy components
+Critical components: 11
+Runtime guard: .bob/quantum-tools/bqca-permission-guard.sh
+Launcher marker: BQCA-CRITICAL-PERMISSION-GUARD-v50
+Active central policy content: unchanged
+Protected assets: .env, workload stores, home Qiskit environment, and qiskit-ibm.json excluded

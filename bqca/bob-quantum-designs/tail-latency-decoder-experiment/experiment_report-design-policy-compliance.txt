@@ -1,0 +1,49 @@
+========================================================================================
+BQCA v48 FORMAL POLICY COMPLIANCE REPORT
+========================================================================================
+Artifact                : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Artifact type           : design
+Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
+Active policy SHA-256   : 63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461
+Validation contract SHA : dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
+Validation date/time    : 2026-10-09T15:30:20.892935-04:00
+Artifact SHA-256        : ad3a19167d8163f364aec0f5068627fa84e90ed1786ff6fa25ff002c95a67dbe
+----------------------------------------------------------------------------------------
+VALIDATION GATES
+----------------------------------------------------------------------------------------
+Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Design policy                   : FAIL     BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Result-output contract          : FAIL     BQCA_RESULT_OUTPUT_POLICY_V48_DESIGN=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+----------------------------------------------------------------------------------------
+VALIDATION FINDINGS
+----------------------------------------------------------------------------------------
+- Design policy: missing algorithm selection or rationale
+- Design policy: missing risk or limitation discussion
+- Design policy: missing validation criteria
+- Design policy: missing Qiskit Connector strategy
+- Design policy: missing home-scoped qiskit-v2x-env path
+- Design policy: missing home environment activation command
+- Design policy: missing Qiskit 2.5-or-later requirement
+- Design policy: missing Open Plan no-Session rule
+- Design policy: missing Open Plan SamplerV2(mode=backend) option
+- Design policy: missing Open Plan EstimatorV2(mode=backend) option
+- Design policy: missing Paid Plan Session strategy
+- Design policy: missing Paid Plan Runtime primitive requirement
+- Design policy: missing controlled try/except fallback requirement
+- Design policy: missing AerSimulator fallback requirement
+- Design policy: missing simulator transpilation requirement
+- Design policy: missing real-QPU backend.run prohibition
+- Design policy: missing direct-execution wrapper
+- Design policy: missing formal orchestrator opt-in scope
+- Result-output contract: missing authoritative result filename
+- Result-output contract: missing output.txt mirror
+- Result-output contract: missing complete live stdout/stderr requirement
+- Result-output contract: missing result timing/duration/exit-status requirements
+- Result-output contract: missing real-QPU Job ID line-one requirement
+- Result-output contract: missing RESULT SUMMARY requirement
+- Result-output contract: missing direct-mode non-blocking policy-gap rule
+----------------------------------------------------------------------------------------
+FINAL STATUS            : NON-COMPLIANT
+========================================================================================

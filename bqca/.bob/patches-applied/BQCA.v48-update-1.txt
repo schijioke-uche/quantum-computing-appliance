@@ -1,0 +1,8 @@
+Patch: BQCA.v48-update-1
+Applied: 2026-07-27T02:37:38Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v48-update-1.20260726223721
+Active policy: v48 (concepts preserved)
+Behavior: validators and policy doctor dynamically resolve the active central policy; automatic design/code compliance reports enabled
+Protected assets: .env, HOME qiskit-v2x-env, HOME .qiskit/qiskit-ibm.json
+Source design/code artifacts: not rewritten

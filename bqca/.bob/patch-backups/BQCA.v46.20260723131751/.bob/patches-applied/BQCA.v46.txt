@@ -1,0 +1,9 @@
+Patch: BQCA.v46
+Applied: 2026-07-23T17:16:11Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v46.20260723131609
+Canonical authority: .bob/BQCA-PRODUCTION-POLICY.md (v46)
+Default execution: .bob/quantum-tools/bqca-direct-execution.sh
+Formal execution: .bob/quantum-tools/bqca-policy-orchestrator.sh (explicit opt-in only)
+Output behavior: live terminal + <source-stem>-result-output.txt + output.txt
+Protected paths: .env, $HOME/qiskit-v2x-env, and $HOME/.qiskit/qiskit-ibm.json excluded and unchanged

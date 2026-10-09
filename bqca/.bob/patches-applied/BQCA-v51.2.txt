@@ -1,0 +1,11 @@
+Patch: BQCA-v51.2
+Applied: 2026-08-13T21:34:18Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-v51.2.20260813173416
+Bob 2.x launcher: bob-quantum-v2.0.1.sh
+Repair: synchronized every custom mode slug with .bob/rules-<slug>/ before DNA assurance
+Primary rule: .bob/rules-quantum-qiskit-connector seeded from existing Qiskit Connector intelligence
+Menu defaults: interactive=quantum-qiskit-connector, ask=quantum-smart, code=quantum-code-heron, advanced=quantum-advanced
+Private .env: excluded and unchanged
+custom_modes.yaml: preserved byte-for-byte
+Active central policy: preserved byte-for-byte

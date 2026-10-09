@@ -1,0 +1,2 @@
+.bob/BQCA-QISKIT-ENV-SCOPE-POLICY-v39-update-1.md
+.bob/patches-applied/BQCA.v39-update-1.txt

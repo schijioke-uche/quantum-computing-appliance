@@ -1,0 +1,9 @@
+Patch: BQCA.v40
+Created: 2026-07-23T13:40:05Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Home-scoped runtime environment: /home/architect/qiskit-v2x-env
+Legacy project environment intentionally excluded: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/qiskit-v2x-env
+Environment file intentionally excluded: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.env
+Runtime environments are never backed up or modified by the installer.
+Restore with:
+  patch-BQCA.v40.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v40.20260723094004"

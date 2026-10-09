@@ -1,0 +1,11 @@
+Patch: BQCA-v51.4
+Applied: 2026-08-18T13:59:15Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/BQCA-v2x/quantum-computing-agent/.bob/patch-backups/BQCA-v51.4.20260818095911
+Active policy: v48
+Production behavior:
+  - Bob 2.x chat/resume uses --trust --auto-approve.
+  - Bob 1.x chat/resume uses --auto-approve when advertised, otherwise --yolo.
+  - Non-interactive run behavior is unchanged.
+  - Auto-approval is confined by the BQCA trusted-workspace safety rule.
+Protected assets: .env, governed stores, HOME Bob/Qiskit state excluded and unchanged.

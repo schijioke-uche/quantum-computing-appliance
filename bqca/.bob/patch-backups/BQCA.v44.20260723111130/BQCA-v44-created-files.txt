@@ -1,0 +1,16 @@
+.bob/quantum-tools/bqca-policy-doctor.sh
+.bob/quantum-tools/bqca-policy-doctor.py
+.bob/quantum-tools/bqca-policy-drift-guard.py
+.bob/quantum-tools/bqca-policy-test-suite.py
+.bob/quantum-tools/bqca-secret-scan.py
+.bob/BQCA-PRODUCTION-POLICY-v44.md
+.bob/patches-applied/BQCA.v44.txt
+.bob/patches-applied/BQCA.v44-assurance-report.txt
+.bob/BQCA-PRODUCTION-POLICY-v44.md
+.bob/quantum-tools/bqca-secret-scan.py
+.bob/quantum-tools/bqca-policy-doctor.py
+.bob/quantum-tools/bqca-policy-doctor.sh
+.bob/quantum-tools/bqca-policy-drift-guard.py
+.bob/quantum-tools/bqca-policy-test-suite.py
+.bob/patches-applied/BQCA.v44.txt
+.bob/patches-applied/BQCA.v44-assurance-report.txt

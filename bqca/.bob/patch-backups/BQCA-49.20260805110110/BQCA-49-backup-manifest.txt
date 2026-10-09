@@ -1,0 +1,9 @@
+Patch: BQCA-49
+Created: 2026-08-05T15:01:11Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Protected project-root file excluded: .env
+Runtime helper: bob-filename-version-sync.sh
+Launcher marker: BQCA-ROOT-FILENAME-VERSION-SYNC-49
+Journal baseline lines: 0
+Restore with:
+  patch-BQCA-49.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA-49.20260805110110"

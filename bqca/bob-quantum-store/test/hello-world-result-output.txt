@@ -1,0 +1,153 @@
+JOB ID: d9v3m4v2sl0c73blcs30
+========================================================================================
+BQCA v48 DIRECT QUANTUM EXECUTION RESULT OUTPUT
+========================================================================================
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Execution target        : REAL_QPU
+Source artifact         : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/hello-world.py
+Command                 : env PYTHONUNBUFFERED=1 /home/architect/qiskit-v2x-env/bin/python -u /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/hello-world.py
+Result output           : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/hello-world-result-output.txt
+Output mirror           : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/output.txt
+Started                 : 2026-08-13T21:45:14Z
+Completed               : 2026-08-13T21:46:34Z
+Duration seconds        : 80
+Exit status             : 0
+Plan                    : Open Plan
+Backend                 : ibm_marrakesh
+Job ID                  : d9v3m4v2sl0c73blcs30
+Fallback reason         : NONE
+Notebook synchronization: PASS
+----------------------------------------------------------------------------------------
+COMPLETE TERMINAL OUTPUT (STDOUT + STDERR)
+----------------------------------------------------------------------------------------
+🌐 Live
+# BQCA_EXECUTION_CONTRACT: Using /home/architect/qiskit-v2x-env/bin/python
+# BQCA_V48_UPDATE4_RESULT_CAPTURE: bqca-direct-execution.sh run
+🌐 Live
+================================================================================
+Qiskit Hello World - Bell State Demo
+BQCA v48 Direct Execution
+================================================================================
+Execution started: 2026-08-13T21:45:34.689729+00:00
+
+Initializing Qiskit Connector...
+Detected Plan: Open Plan
+==================================================================================
+
+   ____   ______                                  __              
+  / __ \ / ____/____   ____   ____   ___   _____ / /_ ____   _____
+ / / / // /    / __ \ / __ \ / __ \ / _ \ / ___// __// __ \ / ___/
+/ /_/ // /___ / /_/ // / / // / / //  __// /__ / /_ / /_/ // /    
+\___\_\\____/ \____//_/ /_//_/ /_/ \___/ \___/ \__/ \____//_/     
+                                                                  
+🧠 Qiskit Connector® for Quantum Backend Realtime Connection
+
+
+⚛️ Connecting (Open Plan) to least-busy QPU...
+----------------------------------------------------------------------------------
+⚛️ Connected [Open Plan] → Realtime Least Busy QPU:: [ibm_marrakesh]
+- ibm_fez
+- ibm_marrakesh
+- ibm_kingston
+
+🖥️ Least Busy QPU Now: [ibm_marrakesh]
+🖥️ Version: 2
+🖥️ Qubits Count: 156
+🖥️ Backend [ibm_marrakesh] ready for use: ✔️ Yes
+🖥️ Operational: Open Plan
+==================================================================================
+
+⚛️ Getting (Open Plan) Least-busy QPU Processor Info...
+----------------------------------------------------------------------------------
+
+--- 🔳  Processor Details for QConnector Least Busy Backend QPU: ibm_marrakesh ---
+🦾 Processor Type: Heron
+🦾 Processor Revision: r2
+🦾 Processor status: 🟢 Online
+                        
+                        
+         .--:.          
+          : .-=-        
+          : -...        
+          :..:          
+           . .:         
+          :::::         
+         ::  .=         
+        :-:: .-         
+       :::::.-          
+      :-:::::-          
+      :=::: ::          
+      .--:  ::          
+            ::          
+            ::          
+            ..          
+                        
+                        
+                        
+🟢 Heron Quantum Processor
+==================================================================================
+
+🖥️ Your Plan: Open Plan
+🖥️ Least Busy QPU: ibm_marrakesh
+🖥️ Backend Status: 🟢 Online
+Selected Backend: ibm_marrakesh
+Backend Status: active
+Backend Operational: True
+Available Qubits: 156
+Required Qubits: 2
+
+Circuit created with 2 qubits
+
+Circuit diagram:
+     ┌───┐     ┌─┐   
+q_0: ┤ H ├──■──┤M├───
+     └───┘┌─┴─┐└╥┘┌─┐
+q_1: ─────┤ X ├─╫─┤M├
+          └───┘ ║ └╥┘
+c: 2/═══════════╩══╩═
+                0  1 
+
+Executing on ibm_marrakesh...
+Real QPU strategy: Open Plan SamplerV2(mode=backend) without Session
+BQCA_EXECUTION_TARGET=REAL_QPU
+BQCA_PLAN=Open Plan
+BQCA_BACKEND=ibm_marrakesh
+BQCA_JOB_ID=d9v3m4v2sl0c73blcs30
+Job ID: d9v3m4v2sl0c73blcs30
+BQCA_RESULT=SUCCESS
+
+Measurement Results:
+  |00⟩:  490 ( 47.9%)
+  |01⟩:   16 (  1.6%)
+  |10⟩:   17 (  1.7%)
+  |11⟩:  501 ( 48.9%)
+
+================================================================================
+RESULT SUMMARY
+================================================================================
+Execution date/time: 2026-08-13T21:45:34.689729+00:00
+Execution duration: 59.29 seconds
+✓ Hello World execution completed successfully on real QPU!
+================================================================================
+----------------------------------------------------------------------------------------
+RESULT SUMMARY
+----------------------------------------------------------------------------------------
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Final execution target  : REAL_QPU
+Real-QPU job ID         : d9v3m4v2sl0c73blcs30
+Backend                 : ibm_marrakesh
+Plan                    : Open Plan
+Reported result status  : SUCCESS
+Reported result value   : NOT REPORTED
+Process exit status     : 0
+Completion date/time    : 2026-08-13T21:46:34Z
+Total duration          : 80 seconds
+Source artifact         : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/hello-world.py
+Result output           : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/hello-world-result-output.txt
+Compatibility output    : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/bob-quantum-store/test/output.txt
+Policy/Execution issue(s): NONE
+========================================================================================

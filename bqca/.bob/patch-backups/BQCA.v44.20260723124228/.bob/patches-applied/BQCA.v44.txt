@@ -1,0 +1,8 @@
+Patch: BQCA.v44
+Applied: 2026-07-23T15:11:32Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v44.20260723111130
+Active policy: .bob/BQCA-PRODUCTION-POLICY.md (v44)
+Open Plan: SamplerV2(mode=backend) or EstimatorV2(mode=backend), selected by workload; Session prohibited
+Assurance: policy doctor, drift guard, wrapper delegation, bypass prevention, secret scan, isolated tests
+Protected assets: excluded and unchanged by installer

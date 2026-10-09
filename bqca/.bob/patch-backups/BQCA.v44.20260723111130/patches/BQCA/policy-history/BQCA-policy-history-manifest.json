@@ -1,0 +1,115 @@
+{
+  "schema": "bqca-policy-history-manifest/v1",
+  "generated_utc": "2026-07-23T14:13:09.005347+00:00",
+  "active_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+  "entries": [
+    {
+      "version": "v30",
+      "status": "incorporated",
+      "scope": "artifact routing, security, design/code separation",
+      "original_path": ".bob/BQCA-PRODUCTION-POLICY-v30.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-PRODUCTION-POLICY-v30.md",
+      "sha256": "1da761128b39ffd45d4d61dec235ed6d62af00c05939b35bfab84d8117d674d7",
+      "size_bytes": 2994
+    },
+    {
+      "version": "v33",
+      "status": "incorporated",
+      "scope": "strict Qiskit Connector code requirements",
+      "original_path": ".bob/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v33.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v33.md",
+      "sha256": "5bc678628c0fbafacd947a9be32e7d63cd5917da52e9fe705359da5f4731dfb8",
+      "size_bytes": 2917
+    },
+    {
+      "version": "v34",
+      "status": "incorporated",
+      "scope": "textual-only Connector design clarification",
+      "original_path": ".bob/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v34.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONNECTOR-STRICT-POLICY-v34.md",
+      "sha256": "b695b4726a1ae101e0cf28e0aab521b4ec265a9d00b18e5fa44a9611c2970a98",
+      "size_bytes": 3582
+    },
+    {
+      "version": "v35",
+      "status": "duplicate",
+      "scope": "notebook guidance superseded by v37",
+      "original_path": ".bob/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v35.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v35.md",
+      "sha256": "d53f860b6c6c904477a42bf1256567d2cd88aaea40b1fc18cc1c961e2e240bac",
+      "size_bytes": 2079
+    },
+    {
+      "version": "v36",
+      "status": "duplicate",
+      "scope": "notebook guidance superseded by v37",
+      "original_path": ".bob/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v36.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v36.md",
+      "sha256": "fb339e331acdab8751975e803b26bcfea63a1277b5b68ec803cc8792fd663dba",
+      "size_bytes": 2079
+    },
+    {
+      "version": "v37",
+      "status": "incorporated",
+      "scope": "runtime notebook watcher and synchronization",
+      "original_path": ".bob/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v37.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-AUTOMATIC-NOTEBOOK-POLICY-v37.md",
+      "sha256": "d3921bff97ce5049c889c450ab6498f3b486c889923583234f68cbbe7426377f",
+      "size_bytes": 1323
+    },
+    {
+      "version": "v38",
+      "status": "incorporated",
+      "scope": "qiskit-ibm.json configuration gate",
+      "original_path": ".bob/BQCA-QISKIT-CONFIGURATION-POLICY-v38.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-CONFIGURATION-POLICY-v38.md",
+      "sha256": "bcc4dd28f7d54ded07cf6831376a60ac12af9593eebfe413ea475d908612f8eb",
+      "size_bytes": 2259
+    },
+    {
+      "version": "v39",
+      "status": "partially incorporated",
+      "scope": "CODE intent and plan-aware execution retained; narrower later policies supersede environment/Hello World wording",
+      "original_path": ".bob/BQCA-QISKIT-EXECUTION-POLICY-v39.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-EXECUTION-POLICY-v39.md",
+      "sha256": "73d7b4ebaabfe2768f9df27d42206cea961426eb378cab3b8b4cadc8eb263965",
+      "size_bytes": 2079
+    },
+    {
+      "version": "v39-update-1",
+      "status": "superseded in scope",
+      "scope": "environment scope refined by v40; corrected test location retained through v41",
+      "original_path": ".bob/BQCA-QISKIT-ENV-SCOPE-POLICY-v39-update-1.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-ENV-SCOPE-POLICY-v39-update-1.md",
+      "sha256": "ef1fb155024e151ff193f755b398e84f18cf0360562c88fc5393b68cdb34d03f",
+      "size_bytes": 693
+    },
+    {
+      "version": "v40",
+      "status": "incorporated",
+      "scope": "home-scoped qiskit-v2x-env",
+      "original_path": ".bob/BQCA-QISKIT-HOME-ENV-POLICY-v40.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-QISKIT-HOME-ENV-POLICY-v40.md",
+      "sha256": "0ad44f2af08272028b92994b1ec99e4563d6016d84bfd98d6b5c36959a384382",
+      "size_bytes": 782
+    },
+    {
+      "version": "v41",
+      "status": "incorporated",
+      "scope": "request-scoped Hello World behavior",
+      "original_path": ".bob/BQCA-HELLO-WORLD-SCOPE-POLICY-v41.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-HELLO-WORLD-SCOPE-POLICY-v41.md",
+      "sha256": "b7531b3bef9e3abf5cf6ca06185bb723b9f6c2be92c89fa0972e8dc40481860c",
+      "size_bytes": 1479
+    },
+    {
+      "version": "v42",
+      "status": "incorporated",
+      "scope": "professional execution result-output contract",
+      "original_path": ".bob/BQCA-RESULT-OUTPUT-POLICY-v42.md",
+      "archive_path": "patches/BQCA/policy-history/BQCA-RESULT-OUTPUT-POLICY-v42.md",
+      "sha256": "3fe135407f738d8734fe10221849203f291af470242e9e428ce1c17d969385e7",
+      "size_bytes": 2478
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+"""Lightweight BQCA v44 launch drift guard."""
+from __future__ import annotations
+import pathlib
+import subprocess
+import sys
+
+root = pathlib.Path(__file__).resolve().parents[2]
+doctor = root / ".bob/quantum-tools/bqca-policy-doctor.sh"
+raise SystemExit(subprocess.run([str(doctor), "check", "--quiet"]).returncode)
+
+# BQCA-CANONICAL-PRODUCTION-POLICY-v46:BEGIN
+# The sole active policy is .bob/BQCA-PRODUCTION-POLICY-v46.md.
+# v46 direct execution is the default for development/testing, exploration,
+# debugging, and quick experiments. The orchestrator is explicit and optional
+# for formal compliance, production deployment, and audit. Mirror output live
+# and write both <source-stem>-result-output.txt and output.txt.
+# BQCA-CANONICAL-PRODUCTION-POLICY-v46:END

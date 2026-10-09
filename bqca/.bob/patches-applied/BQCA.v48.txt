@@ -1,0 +1,15 @@
+Patch: BQCA.v48
+Applied: 2026-07-27T01:22:27Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v48.20260726212223
+Active policy: .bob/BQCA-PRODUCTION-POLICY.md
+Versioned policy: .bob/BQCA-PRODUCTION-POLICY-v48.md
+Policy SHA-256: 6d6a7d41b8bcd4f152ec0a7d8e37ed0d804e5ee044c5269e624709707f8fc49b
+Incorporated patches: patch-BQCA.v47.sh, v47-update-1, v47-update-2, v47-update-3, v47-update-4, v47-update-5, v47-update-6
+Update 5 disposition: superseded by Update 6 offline local catalog
+Knowledgebase entries: 82
+Knowledgebase design cards: 82
+Knowledgebase code examples: 61
+Default execution: direct synchronous live terminal + dual result files
+Formal orchestrator: explicit opt-in only
+Protected assets: excluded and unchanged by installer

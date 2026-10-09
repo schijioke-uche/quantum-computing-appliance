@@ -1,0 +1,7 @@
+Patch: BQCA.v39
+Created: 2026-07-22T17:21:53Z
+Appliance root: /mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent
+Environment file intentionally excluded: .env
+Runtime qiskit-v2x-env is not created by the installer and is not removed by rollback.
+Restore with:
+  patch-BQCA.v39.sh --target "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent" --rollback "/mnt/d/.2026/BOB/CODES/IBM-SOFTWARE-LAB1/quantum-computing-agent/.bob/patch-backups/BQCA.v39.20260722132138"

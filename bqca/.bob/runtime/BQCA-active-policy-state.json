@@ -1,0 +1,365 @@
+{
+  "active_version": "v48",
+  "cache_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/runtime/BQCA-active-policy-state.json",
+  "contract": {
+    "binding": {
+      "listener": ".bob/quantum-tools/bqca-active-policy-listener.sh",
+      "mode": "resolve-registry-and-policy-on-every-validation",
+      "registry": ".bob/BQCA-ACTIVE-POLICY-REGISTRY.json",
+      "stable_policy": ".bob/BQCA-PRODUCTION-POLICY.md",
+      "validator_engine": ".bob/quantum-tools/bqca-dynamic-validator.py"
+    },
+    "code": {
+      "gates": [
+        {
+          "allowed_extensions": [
+            ".py"
+          ],
+          "allowed_roots": [
+            "bob-quantum-store"
+          ],
+          "id": "artifact_routing",
+          "label": "Artifact routing",
+          "type": "routing"
+        },
+        {
+          "id": "python_syntax",
+          "label": "Python syntax",
+          "type": "python_syntax"
+        },
+        {
+          "id": "code_policy",
+          "label": "Code policy",
+          "parameters": {
+            "assignment_calls": [
+              {
+                "function": "plan",
+                "target": "current"
+              },
+              {
+                "function": "connector",
+                "target": "backend"
+              }
+            ],
+            "direct_execution_wrapper": "bqca-direct-execution.sh",
+            "exact_imports": [
+              {
+                "asname": "connector",
+                "module": "qiskit_connector",
+                "name": "QConnectorV2"
+              },
+              {
+                "asname": "plan",
+                "module": "qiskit_connector",
+                "name": "QPlanV2"
+              }
+            ],
+            "home_environment_markers": [
+              "$HOME/qiskit-v2x-env",
+              "~/qiskit-v2x-env"
+            ],
+            "minimum_qiskit_version": "2.5",
+            "required_markers": [
+              "BQCA_EXECUTION_TARGET",
+              "BQCA_PLAN",
+              "BQCA_BACKEND",
+              "BQCA_JOB_ID",
+              "BQCA_RESULT",
+              "BQCA_FALLBACK_REASON"
+            ],
+            "simulator_names": [
+              "AerSimulator",
+              "StatevectorSimulator",
+              "BasicSimulator"
+            ]
+          },
+          "required_regex": [
+            {
+              "message": "missing authorized home-scoped qiskit-v2x-env execution marker",
+              "pattern": "(?:\\$HOME|~)/qiskit-v2x-env"
+            },
+            {
+              "message": "missing explicit Qiskit 2.5-or-later requirement",
+              "pattern": "Qiskit.{0,100}(?:>=|version|minimum|min).{0,30}2\\.5|2\\.5.{0,100}Qiskit"
+            },
+            {
+              "message": "missing direct-execution wrapper contract",
+              "pattern": "bqca-direct-execution\\.sh"
+            }
+          ],
+          "semantic_checks": [
+            "exact_imports",
+            "assignment_calls",
+            "home_environment_marker",
+            "qiskit_min_version",
+            "direct_execution_wrapper",
+            "open_plan_v2_job_mode",
+            "paid_plan_session_v2",
+            "simulator_fallback",
+            "real_backend_run_forbidden",
+            "qpu_checks",
+            "execution_markers",
+            "synchronous_execution"
+          ],
+          "type": "python_policy"
+        },
+        {
+          "forbidden_regex": [
+            {
+              "message": "project-local qiskit-v2x-env is prohibited",
+              "pattern": "(?:PROJECT_ROOT|BQCA_ROOT|SCRIPT_DIR)[^\\n]{0,80}/qiskit-v2x-env"
+            }
+          ],
+          "id": "home_environment",
+          "label": "Home environment",
+          "required_regex": [
+            {
+              "message": "missing authorized home Qiskit environment",
+              "pattern": "(?:\\$HOME|~)/qiskit-v2x-env"
+            }
+          ],
+          "type": "text_policy"
+        },
+        {
+          "forbidden_regex": [
+            {
+              "message": "Hello World content is prohibited in non-Hello-World code",
+              "pattern": "\\b(?:hello[\\s_-]*world|hellow[\\s_-]*world)\\b",
+              "unless_path_regex": "hello[\\s_-]*world|hellow[\\s_-]*world"
+            }
+          ],
+          "id": "hello_world_scope",
+          "label": "Hello World scope",
+          "type": "text_policy"
+        },
+        {
+          "id": "result_output_contract",
+          "label": "Result-output contract",
+          "required_literals": [
+            {
+              "message": "missing BQCA_EXECUTION_TARGET marker",
+              "value": "BQCA_EXECUTION_TARGET"
+            },
+            {
+              "message": "missing BQCA_PLAN marker",
+              "value": "BQCA_PLAN"
+            },
+            {
+              "message": "missing BQCA_BACKEND marker",
+              "value": "BQCA_BACKEND"
+            },
+            {
+              "message": "missing BQCA_JOB_ID marker",
+              "value": "BQCA_JOB_ID"
+            },
+            {
+              "message": "missing BQCA_RESULT marker",
+              "value": "BQCA_RESULT"
+            },
+            {
+              "message": "missing BQCA_FALLBACK_REASON marker",
+              "value": "BQCA_FALLBACK_REASON"
+            }
+          ],
+          "required_regex": [
+            {
+              "message": "BQCA_RESULT must report SUCCESS or FAILURE at runtime",
+              "pattern": "BQCA_RESULT\\s*=\\s*(?:SUCCESS|FAILURE)|BQCA_RESULT[}\\\"']?\\s*[:=]"
+            }
+          ],
+          "type": "text_policy"
+        },
+        {
+          "id": "secret_scan",
+          "label": "Secret scan",
+          "type": "secret_scan"
+        }
+      ],
+      "skip_if_no_qiskit": true
+    },
+    "compliance_reporting": {
+      "code_suffix": "-code-policy-compliance.txt",
+      "design_suffix": "-design-policy-compliance.txt",
+      "enabled": true,
+      "same_directory_as_artifact": true,
+      "title": "FORMAL POLICY COMPLIANCE REPORT",
+      "write_on_fail": true,
+      "write_on_pass": true
+    },
+    "design": {
+      "gates": [
+        {
+          "allowed_extensions": [
+            ".md",
+            ".txt"
+          ],
+          "allowed_roots": [
+            "bob-quantum-designs"
+          ],
+          "id": "artifact_routing",
+          "label": "Artifact routing",
+          "type": "routing"
+        },
+        {
+          "forbidden_regex": [
+            {
+              "message": "design contains executable/fenced Python; use textual instructions only",
+              "pattern": "```\\s*(?:python|py)\\b.*?```"
+            },
+            {
+              "message": "design contains an executable implementation block",
+              "pattern": "```[^\\n]*\\n.*?(?:from\\s+qiskit|current\\s*=\\s*plan\\s*\\(|backend\\s*=\\s*connector\\s*\\(|try\\s*:).*?```"
+            }
+          ],
+          "id": "design_policy",
+          "label": "Design policy",
+          "required_regex": [
+            {
+              "message": "missing problem/objective statement",
+              "pattern": "(?:problem|objective|research question)"
+            },
+            {
+              "message": "missing algorithm selection or rationale",
+              "pattern": "algorithm"
+            },
+            {
+              "message": "missing qubit or circuit strategy",
+              "pattern": "(?:qubit|circuit)"
+            },
+            {
+              "message": "missing risk or limitation discussion",
+              "pattern": "(?:risk|limitation)"
+            },
+            {
+              "message": "missing validation criteria",
+              "pattern": "validation"
+            },
+            {
+              "message": "missing Qiskit Connector strategy",
+              "pattern": "Qiskit Connector|QConnectorV2|qiskit_connector"
+            },
+            {
+              "message": "missing home-scoped qiskit-v2x-env path",
+              "pattern": "(?:\\$HOME|~)/qiskit-v2x-env"
+            },
+            {
+              "message": "missing home environment activation command",
+              "pattern": "source\\s+(?:\\\"?\\$HOME|~)/qiskit-v2x-env/bin/activate"
+            },
+            {
+              "message": "missing Qiskit 2.5-or-later requirement",
+              "pattern": "Qiskit.{0,100}(?:2\\.5|2\\.5\\+|2\\.5 or later)"
+            },
+            {
+              "message": "missing Open Plan no-Session rule",
+              "pattern": "Open Plan.{0,360}(?:(?:must\\s+not|never|prohibited|forbidden|not\\s+allowed).{0,100}Session|(?:no|without)\\s+Session)"
+            },
+            {
+              "message": "missing Open Plan SamplerV2(mode=backend) option",
+              "pattern": "SamplerV2\\s*\\(\\s*mode\\s*=\\s*backend\\s*\\)"
+            },
+            {
+              "message": "missing Open Plan EstimatorV2(mode=backend) option",
+              "pattern": "EstimatorV2\\s*\\(\\s*mode\\s*=\\s*backend\\s*\\)"
+            },
+            {
+              "message": "missing Paid Plan Session strategy",
+              "pattern": "(?:Paid Plan|Flex|Pay-As-You-Go|Premium|Dedicated).{0,360}Session"
+            },
+            {
+              "message": "missing Paid Plan Runtime primitive requirement",
+              "pattern": "(?:SamplerV2|EstimatorV2).{0,180}mode\\s*=\\s*session"
+            },
+            {
+              "message": "missing controlled try/except fallback requirement",
+              "pattern": "try\\s*/?\\s*except|try.{0,160}except"
+            },
+            {
+              "message": "missing AerSimulator fallback requirement",
+              "pattern": "AerSimulator"
+            },
+            {
+              "message": "missing simulator transpilation requirement",
+              "pattern": "transpile.{0,220}(?:AerSimulator|simulator)|(?:AerSimulator|simulator).{0,220}transpile"
+            },
+            {
+              "message": "missing real-QPU backend.run prohibition",
+              "pattern": "(?:backend\\.run\\(\\).{0,220}(?:real QPU|hardware).{0,140}(?:prohibited|forbidden|must\\s+not|not\\s+allowed)|(?:real QPU|hardware).{0,220}backend\\.run\\(\\).{0,140}(?:prohibited|forbidden|must\\s+not|not\\s+allowed))"
+            },
+            {
+              "message": "missing direct-execution wrapper",
+              "pattern": "bqca-direct-execution\\.sh"
+            },
+            {
+              "message": "missing formal orchestrator opt-in scope",
+              "pattern": "(?:formal|compliance|production|audit).{0,220}(?:orchestrator|formal-run)|(?:orchestrator|formal-run).{0,220}(?:formal|compliance|production|audit)"
+            }
+          ],
+          "type": "text_policy"
+        },
+        {
+          "forbidden_regex": [
+            {
+              "message": "Hello World content is prohibited in a non-Hello-World design",
+              "pattern": "\\b(?:hello[\\s_-]*world|hellow[\\s_-]*world)\\b",
+              "unless_heading_regex": "hello[\\s_-]*world|hellow[\\s_-]*world",
+              "unless_path_regex": "hello[\\s_-]*world|hellow[\\s_-]*world"
+            }
+          ],
+          "id": "hello_world_scope",
+          "label": "Hello World scope",
+          "type": "text_policy"
+        },
+        {
+          "id": "result_output_contract",
+          "label": "Result-output contract",
+          "required_regex": [
+            {
+              "message": "missing authoritative result filename",
+              "pattern": "<source-stem>-result-output\\.txt|<code-name>-result-output\\.txt"
+            },
+            {
+              "message": "missing output.txt mirror",
+              "pattern": "output\\.txt"
+            },
+            {
+              "message": "missing complete live stdout/stderr requirement",
+              "pattern": "(?:stdout|standard output).{0,100}(?:stderr|standard error).{0,120}(?:terminal|live|stream)"
+            },
+            {
+              "message": "missing result timing/duration/exit-status requirements",
+              "pattern": "(?:timestamp|date and time|started).{0,180}(?:completed|duration|exit status)"
+            },
+            {
+              "message": "missing real-QPU Job ID line-one requirement",
+              "pattern": "JOB ID.{0,100}(?:first line|line one)|(?:first line|line one).{0,100}JOB ID"
+            },
+            {
+              "message": "missing RESULT SUMMARY requirement",
+              "pattern": "RESULT SUMMARY"
+            },
+            {
+              "message": "missing direct-mode non-blocking policy-gap rule",
+              "pattern": "(?:policy gaps|missing markers|contract gaps).{0,160}(?:warning|non-blocking)"
+            }
+          ],
+          "type": "text_policy"
+        },
+        {
+          "id": "secret_scan",
+          "label": "Secret scan",
+          "type": "secret_scan"
+        }
+      ]
+    },
+    "policy_version": "v48",
+    "schema_version": 1
+  },
+  "contract_sha256": "dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc",
+  "policy_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
+  "registry_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-ACTIVE-POLICY-REGISTRY.json",
+  "schema_version": 1,
+  "synced_utc": "2026-10-09T19:30:21Z",
+  "versioned_policy_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY-v48.md"
+}

@@ -1,0 +1,7 @@
+Patch: BQCA.v47-update-6
+Created: 2026-07-24T23:40:03Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Supersedes: BQCA.v47-update-5 mandatory URL research gate
+Protected assets intentionally excluded: .env, workload stores, home Qiskit environment, account JSON
+Restore with:
+  patch-BQCA.v47-update-6.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-6.20260724194001"

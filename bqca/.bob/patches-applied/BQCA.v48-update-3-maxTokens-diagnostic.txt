@@ -1,0 +1,20 @@
+========================================================================================
+BQCA BOB SHELL TOKEN-PROPERTY DIAGNOSTIC REPORT
+========================================================================================
+Generated                    : 2026-07-29T01:31:26.982937+00:00
+BQCA root                    : /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Bob binary                   : /home/architect/.nvm/versions/node/v24.17.0/bin/bob
+Bob version                  : 1.0.6
+Custom modes                 : 13
+Duplicate slugs              : 0
+Invalid slugs                : 0
+Active BQCA token-key hits   : 0
+User Bob config key hits     : 0
+Recent Bob log key hits      : 0
+Classification               : BOB_SHELL_OR_SERVICE_IF_ERROR_PERSISTS
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+TAKEAWAY: BQCA mode configuration is valid and no active BQCA source defines the
+token-property key. If the UI TypeError still occurs, it is in Bob Shell or its
+service/model metadata. This tool does not modify Bob software.
+========================================================================================

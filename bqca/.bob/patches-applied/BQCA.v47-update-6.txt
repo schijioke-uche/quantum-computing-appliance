@@ -1,0 +1,13 @@
+Patch: BQCA.v47-update-6
+Applied: 2026-07-24T23:40:04Z
+Root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Backup: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-6.20260724194001
+Active policy: BQCA v47 (unchanged)
+Supersedes: BQCA.v47-update-5 mandatory URL seed/sublink research gate
+Knowledgebase mode: offline curated algorithm catalog
+Catalog: .bob/quantum-tools/knowlegebase/bqca_quantum_algorithm_catalog.json
+Tool: .bob/quantum-tools/bqca-quantum-kb.sh
+Qiskit floor: 2.5.0
+Open Plan: SamplerV2(mode=backend) or EstimatorV2(mode=backend), no Session
+Paid Plan: Session with the suitable V2 primitive
+Protected assets: excluded and unchanged

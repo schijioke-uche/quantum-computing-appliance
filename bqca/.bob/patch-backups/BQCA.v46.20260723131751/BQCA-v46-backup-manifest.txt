@@ -1,0 +1,9 @@
+Patch: BQCA.v46
+Created: 2026-07-23T17:17:52Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Protected paths intentionally excluded:
+  .env
+  $HOME/qiskit-v2x-env
+  $HOME/.qiskit/qiskit-ibm.json
+Restore with:
+  patch-BQCA.v46.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v46.20260723131751"

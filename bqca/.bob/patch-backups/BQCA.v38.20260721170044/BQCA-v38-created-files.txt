@@ -1,0 +1,4 @@
+.bob/BQCA-QISKIT-CONFIGURATION-POLICY-v38.md
+.bob/quantum-tools/qiskit-configuration.py
+.bob/quantum-tools/qiskit-configuration.sh
+.bob/patches-applied/BQCA.v38.txt

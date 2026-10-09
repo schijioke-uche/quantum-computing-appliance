@@ -1,0 +1,12 @@
+Patch: BQCA.v43
+Created: 2026-07-23T14:13:08Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Purpose: hard consolidation of BQCA policies v30-v42 into canonical v43
+Protected files intentionally excluded:
+  .env
+  $HOME/qiskit-v2x-env
+  $HOME/.qiskit/qiskit-ibm.json
+  bob-quantum-designs/*
+  bob-quantum-store/*
+Restore with:
+  patch-BQCA.v43.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v43.20260723101307"

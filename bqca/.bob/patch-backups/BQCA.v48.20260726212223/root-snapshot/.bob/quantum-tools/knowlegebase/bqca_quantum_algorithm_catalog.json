@@ -1,0 +1,2634 @@
+{
+  "catalog_version": "BQCA.v47-update-6",
+  "entries": [
+    {
+      "category": "Foundations",
+      "name": "Bell State",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "bell-state",
+      "status": "runnable",
+      "summary": "Prepare and measure a two-qubit Bell state.",
+      "template_pattern": "bell",
+      "use_cases": [
+        "entanglement demo",
+        "connectivity smoke test"
+      ]
+    },
+    {
+      "category": "Foundations",
+      "name": "GHZ State",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "ghz-state",
+      "status": "runnable",
+      "summary": "Prepare and measure an n-qubit GHZ state.",
+      "template_pattern": "ghz",
+      "use_cases": [
+        "multipartite entanglement",
+        "hardware validation"
+      ]
+    },
+    {
+      "category": "Foundations",
+      "name": "Quantum Teleportation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-teleportation",
+      "status": "starter",
+      "summary": "Teleport a single-qubit state using entanglement and classical feed-forward.",
+      "template_pattern": "teleportation",
+      "use_cases": [
+        "communication protocols",
+        "dynamic-circuit study"
+      ]
+    },
+    {
+      "category": "Foundations",
+      "name": "Superdense Coding",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "superdense-coding",
+      "status": "starter",
+      "summary": "Transmit two classical bits using one qubit and shared entanglement.",
+      "template_pattern": "superdense",
+      "use_cases": [
+        "communication protocols",
+        "education"
+      ]
+    },
+    {
+      "category": "Oracle Algorithms",
+      "name": "Deutsch-Jozsa",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "deutsch-jozsa",
+      "status": "runnable",
+      "summary": "Determine whether a Boolean oracle is constant or balanced.",
+      "template_pattern": "deutsch_jozsa",
+      "use_cases": [
+        "oracle classification",
+        "education"
+      ]
+    },
+    {
+      "category": "Oracle Algorithms",
+      "name": "Bernstein-Vazirani",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "bernstein-vazirani",
+      "status": "runnable",
+      "summary": "Recover a hidden bit string with a single oracle query.",
+      "template_pattern": "bernstein_vazirani",
+      "use_cases": [
+        "oracle learning",
+        "education"
+      ]
+    },
+    {
+      "category": "Oracle Algorithms",
+      "name": "Simon Algorithm",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "simon",
+      "status": "design_reference",
+      "summary": "Find a hidden XOR period under a two-to-one promise.",
+      "template_pattern": "generic",
+      "use_cases": [
+        "period finding",
+        "algorithm research"
+      ]
+    },
+    {
+      "category": "Search and Amplification",
+      "name": "Grover Search",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "grover-search",
+      "status": "runnable",
+      "summary": "Amplitude-amplification search for marked states.",
+      "template_pattern": "grover",
+      "use_cases": [
+        "unstructured search",
+        "constraint search"
+      ]
+    },
+    {
+      "category": "Search and Amplification",
+      "name": "Amplitude Amplification",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "amplitude-amplification",
+      "status": "starter",
+      "summary": "Generalized amplitude amplification around a state preparation and oracle.",
+      "template_pattern": "grover",
+      "use_cases": [
+        "probability boosting",
+        "search subroutines"
+      ]
+    },
+    {
+      "category": "Search and Amplification",
+      "name": "Quantum Counting",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-counting",
+      "status": "design_reference",
+      "summary": "Estimate the number of marked states using phase estimation on a Grover operator.",
+      "template_pattern": "qpe",
+      "use_cases": [
+        "counting solutions",
+        "search analysis"
+      ]
+    },
+    {
+      "category": "Fourier and Phase",
+      "name": "Quantum Fourier Transform",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qft",
+      "status": "runnable",
+      "summary": "Apply the QFT or inverse QFT as a reusable circuit subroutine.",
+      "template_pattern": "qft",
+      "use_cases": [
+        "phase processing",
+        "period finding"
+      ]
+    },
+    {
+      "category": "Fourier and Phase",
+      "name": "Quantum Phase Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qpe",
+      "status": "starter",
+      "summary": "Estimate an eigenphase using controlled unitaries and inverse QFT.",
+      "template_pattern": "qpe",
+      "use_cases": [
+        "eigenphase estimation",
+        "eigensolver subroutine"
+      ]
+    },
+    {
+      "category": "Fourier and Phase",
+      "name": "Iterative Phase Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "iterative-qpe",
+      "status": "design_reference",
+      "summary": "Estimate phase iteratively with fewer ancillas and repeated jobs.",
+      "template_pattern": "generic",
+      "use_cases": [
+        "resource-constrained phase estimation"
+      ]
+    },
+    {
+      "category": "Fourier and Phase",
+      "name": "Shor Factoring",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "shor-factoring",
+      "status": "design_reference",
+      "summary": "Factor integers using order finding and classical post-processing.",
+      "template_pattern": "generic",
+      "use_cases": [
+        "cryptanalysis research",
+        "period finding"
+      ]
+    },
+    {
+      "category": "Arithmetic",
+      "name": "Quantum Addition",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-addition",
+      "status": "design_reference",
+      "summary": "Reversible addition using ripple-carry or Fourier arithmetic.",
+      "template_pattern": "generic",
+      "use_cases": [
+        "arithmetic subroutines",
+        "simulation"
+      ]
+    },
+    {
+      "category": "Amplitude Estimation",
+      "name": "Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "amplitude-estimation",
+      "status": "starter",
+      "summary": "Amplitude Estimation for estimating a target probability.",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "Monte Carlo acceleration",
+        "risk estimation"
+      ]
+    },
+    {
+      "category": "Amplitude Estimation",
+      "name": "Iterative Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "iterative-amplitude-estimation",
+      "status": "starter",
+      "summary": "Iterative Amplitude Estimation for estimating a target probability.",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "Monte Carlo acceleration",
+        "risk estimation"
+      ]
+    },
+    {
+      "category": "Amplitude Estimation",
+      "name": "Maximum-Likelihood Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "maximum-likelihood-amplitude-estimation",
+      "status": "starter",
+      "summary": "Maximum-Likelihood Amplitude Estimation for estimating a target probability.",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "Monte Carlo acceleration",
+        "risk estimation"
+      ]
+    },
+    {
+      "category": "Amplitude Estimation",
+      "name": "Faster Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "3+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "faster-amplitude-estimation",
+      "status": "starter",
+      "summary": "Faster Amplitude Estimation for estimating a target probability.",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "Monte Carlo acceleration",
+        "risk estimation"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "Variational Quantum Eigensolver",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vqe",
+      "status": "runnable",
+      "summary": "Hybrid variational minimum-eigenvalue workflow.",
+      "template_pattern": "variational",
+      "use_cases": [
+        "ground-state energy",
+        "Hamiltonian optimization"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "SamplingVQE",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "sampling-vqe",
+      "status": "starter",
+      "summary": "Sampling-based variational eigensolver for diagonal cost Hamiltonians.",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "combinatorial optimization",
+        "Ising models"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "Variational Quantum Deflation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "2+",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vqd",
+      "status": "starter",
+      "summary": "Compute excited states by penalizing overlap with previously found states.",
+      "template_pattern": "variational",
+      "use_cases": [
+        "excited-state energies"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "ADAPT-VQE",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "adapt-vqe",
+      "status": "design_reference",
+      "summary": "Grow an ansatz adaptively from an operator pool.",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry ansatz reduction"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "Ground-State Eigensolver",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "ground-state-eigensolver",
+      "status": "starter",
+      "summary": "Wrap a minimum eigensolver around a transformed natural-science problem.",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "lattice models"
+      ]
+    },
+    {
+      "category": "Variational Eigensolvers",
+      "name": "Excited-States Eigensolver",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "excited-states-eigensolver",
+      "status": "design_reference",
+      "summary": "Compute multiple low-lying eigenstates with a suitable eigensolver.",
+      "template_pattern": "variational",
+      "use_cases": [
+        "spectroscopy",
+        "excited-state chemistry"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "QAOA",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qaoa",
+      "status": "runnable",
+      "summary": "General QUBO and Ising optimization",
+      "template_pattern": "variational",
+      "use_cases": [
+        "general qubo and ising optimization",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Max-Cut QAOA",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "maxcut-qaoa",
+      "status": "runnable",
+      "summary": "Graph partitioning",
+      "template_pattern": "maxcut",
+      "use_cases": [
+        "graph partitioning",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Portfolio Optimization",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "portfolio-optimization",
+      "status": "starter",
+      "summary": "Risk-return allocation",
+      "template_pattern": "variational",
+      "use_cases": [
+        "risk-return allocation",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Knapsack",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "knapsack",
+      "status": "starter",
+      "summary": "Capacity-constrained selection",
+      "template_pattern": "variational",
+      "use_cases": [
+        "capacity-constrained selection",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Traveling Salesperson",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "traveling-salesperson",
+      "status": "starter",
+      "summary": "Route optimization",
+      "template_pattern": "variational",
+      "use_cases": [
+        "route optimization",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Vehicle Routing",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vehicle-routing",
+      "status": "starter",
+      "summary": "Multi-vehicle route optimization",
+      "template_pattern": "variational",
+      "use_cases": [
+        "multi-vehicle route optimization",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Graph Coloring",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "graph-coloring",
+      "status": "starter",
+      "summary": "Conflict-free graph coloring",
+      "template_pattern": "variational",
+      "use_cases": [
+        "conflict-free graph coloring",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Maximum Clique",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "maximum-clique",
+      "status": "starter",
+      "summary": "Dense subgraph selection",
+      "template_pattern": "variational",
+      "use_cases": [
+        "dense subgraph selection",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Exact Cover",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "exact-cover",
+      "status": "starter",
+      "summary": "Constraint satisfaction",
+      "template_pattern": "variational",
+      "use_cases": [
+        "constraint satisfaction",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Number Partition",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "number-partition",
+      "status": "starter",
+      "summary": "Balanced subset partitioning",
+      "template_pattern": "variational",
+      "use_cases": [
+        "balanced subset partitioning",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Bin Packing",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "bin-packing",
+      "status": "starter",
+      "summary": "Resource packing",
+      "template_pattern": "variational",
+      "use_cases": [
+        "resource packing",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "N-Queens",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "n-queens",
+      "status": "starter",
+      "summary": "Constraint-placement benchmark",
+      "template_pattern": "variational",
+      "use_cases": [
+        "constraint-placement benchmark",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Set Packing",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "set-packing",
+      "status": "starter",
+      "summary": "Disjoint subset selection",
+      "template_pattern": "variational",
+      "use_cases": [
+        "disjoint subset selection",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Minimum Vertex Cover",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vertex-cover",
+      "status": "starter",
+      "summary": "Graph covering",
+      "template_pattern": "variational",
+      "use_cases": [
+        "graph covering",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "QUBO / Ising Mapping",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qubo-mapping",
+      "status": "runnable",
+      "summary": "Classical-to-quantum optimization mapping",
+      "template_pattern": "variational",
+      "use_cases": [
+        "classical-to-quantum optimization mapping",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Grover Optimizer",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "grover-optimizer",
+      "status": "starter",
+      "summary": "Threshold-based optimization with Grover search",
+      "template_pattern": "variational",
+      "use_cases": [
+        "threshold-based optimization with grover search",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Optimization",
+      "name": "Quantum Random Access Optimization",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qrao",
+      "status": "starter",
+      "summary": "Relaxed encoding optimization",
+      "template_pattern": "variational",
+      "use_cases": [
+        "relaxed encoding optimization",
+        "hybrid optimization"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Variational Quantum Classifier",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vqc",
+      "status": "starter",
+      "summary": "Classification with a feature map and variational ansatz",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Variational Quantum Regressor",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vqr",
+      "status": "starter",
+      "summary": "Regression with a variational quantum model",
+      "template_pattern": "variational",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Quantum Support Vector Classifier",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qsvc",
+      "status": "starter",
+      "summary": "Classification with a fidelity quantum kernel",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Quantum Support Vector Regressor",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qsvr",
+      "status": "starter",
+      "summary": "Regression with a fidelity quantum kernel",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Pegasos QSVC",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "pegasos-qsvc",
+      "status": "starter",
+      "summary": "Pegasos-based quantum-kernel classifier",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Fidelity Quantum Kernel",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-kernel",
+      "status": "starter",
+      "summary": "Kernel matrix estimation with quantum state fidelity",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "EstimatorQNN",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "estimator-qnn",
+      "status": "starter",
+      "summary": "Quantum neural network with expectation-value outputs",
+      "template_pattern": "variational",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "SamplerQNN",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "sampler-qnn",
+      "status": "starter",
+      "summary": "Quantum neural network with sampled bitstring outputs",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Neural Network Classifier",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "neural-network-classifier",
+      "status": "starter",
+      "summary": "Train a QNN classifier",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Neural Network Regressor",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "neural-network-regressor",
+      "status": "starter",
+      "summary": "Train a QNN regressor",
+      "template_pattern": "variational",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "TorchConnector QNN",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "torch-connector",
+      "status": "design_reference",
+      "summary": "Integrate a QNN into PyTorch autograd",
+      "template_pattern": "variational",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Quantum Machine Learning",
+      "name": "Quantum Bayesian Inference",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-machine-learning/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-machine-learning",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-bayesian-inference",
+      "status": "design_reference",
+      "summary": "Quantum-assisted Bayesian inference",
+      "template_pattern": "variational_sampler",
+      "use_cases": [
+        "classification",
+        "regression",
+        "hybrid ML"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Electronic Structure VQE",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "electronic-structure-vqe",
+      "status": "starter",
+      "summary": "Ground-state electronic structure using second-quantized operators and qubit mappings",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Molecular Ground-State Energy",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "molecular-ground-state",
+      "status": "starter",
+      "summary": "Ground-state energy workflow for a molecular Hamiltonian",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Molecular Excited States",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "molecular-excited-states",
+      "status": "design_reference",
+      "summary": "Excited-state energies and spectra",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Molecular Dipole Moment",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "dipole-moment",
+      "status": "design_reference",
+      "summary": "Evaluate dipole-moment observables",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Vibrational Structure",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "vibrational-structure",
+      "status": "design_reference",
+      "summary": "Vibrational Hamiltonian eigensolver workflow",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Fermi-Hubbard Model",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "fermi-hubbard",
+      "status": "starter",
+      "summary": "Lattice-model ground-state or dynamics workflow",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Ising Model",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "ising-model",
+      "status": "runnable",
+      "summary": "Expectation-value or minimum-energy study of an Ising Hamiltonian",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "Heisenberg Model",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "heisenberg-model",
+      "status": "starter",
+      "summary": "Spin-chain energy and dynamics",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Nature, Chemistry and Physics",
+      "name": "General Lattice Model",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://quantum.cloud.ibm.com/docs/en/guides/estimator-examples",
+        "https://qiskit-community.github.io/qiskit-nature/",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-nature",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "lattice-model",
+      "status": "design_reference",
+      "summary": "Map lattice Hamiltonians to qubits",
+      "template_pattern": "variational",
+      "use_cases": [
+        "chemistry",
+        "materials",
+        "condensed matter"
+      ]
+    },
+    {
+      "category": "Dynamics and Linear Systems",
+      "name": "Trotterized Time Evolution",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "trotter-time-evolution",
+      "status": "starter",
+      "summary": "Approximate Hamiltonian time evolution with product formulas",
+      "template_pattern": "time_evolution",
+      "use_cases": [
+        "dynamics",
+        "linear systems",
+        "graph processes"
+      ]
+    },
+    {
+      "category": "Dynamics and Linear Systems",
+      "name": "Variational Time Evolution",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "variational-time-evolution",
+      "status": "design_reference",
+      "summary": "Variational real- or imaginary-time evolution",
+      "template_pattern": "variational",
+      "use_cases": [
+        "dynamics",
+        "linear systems",
+        "graph processes"
+      ]
+    },
+    {
+      "category": "Dynamics and Linear Systems",
+      "name": "QDrift Evolution",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "qdrift",
+      "status": "design_reference",
+      "summary": "Randomized product-formula evolution",
+      "template_pattern": "time_evolution",
+      "use_cases": [
+        "dynamics",
+        "linear systems",
+        "graph processes"
+      ]
+    },
+    {
+      "category": "Dynamics and Linear Systems",
+      "name": "HHL Linear Solver",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "hhl",
+      "status": "design_reference",
+      "summary": "Quantum linear-system solver for structured sparse systems",
+      "template_pattern": "generic",
+      "use_cases": [
+        "dynamics",
+        "linear systems",
+        "graph processes"
+      ]
+    },
+    {
+      "category": "Dynamics and Linear Systems",
+      "name": "Quantum Walk",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-walk",
+      "status": "starter",
+      "summary": "Discrete- or continuous-time quantum walk",
+      "template_pattern": "generic",
+      "use_cases": [
+        "dynamics",
+        "linear systems",
+        "graph processes"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Repetition Code",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "repetition-code",
+      "status": "runnable",
+      "summary": "Bit-flip repetition-code encoding and syndrome study",
+      "template_pattern": "repetition",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Quantum Error Correction Workflow",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "quantum-error-correction",
+      "status": "starter",
+      "summary": "Encode, inject errors, extract syndromes, and decode",
+      "template_pattern": "repetition",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Zero-Noise Extrapolation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "zero-noise-extrapolation",
+      "status": "design_reference",
+      "summary": "Estimate zero-noise observables from scaled-noise executions",
+      "template_pattern": "variational",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Dynamical Decoupling",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "dynamical-decoupling",
+      "status": "design_reference",
+      "summary": "Insert pulse-level decoupling sequences through runtime/transpiler options",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Pauli Twirling",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "pauli-twirling",
+      "status": "starter",
+      "summary": "Randomize coherent errors with Pauli conjugations",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Readout Error Mitigation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "readout-error-mitigation",
+      "status": "design_reference",
+      "summary": "Calibrate and mitigate measurement error",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "State Tomography",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "state-tomography",
+      "status": "starter",
+      "summary": "Reconstruct a quantum state from measurement bases",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Process Tomography",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "process-tomography",
+      "status": "design_reference",
+      "summary": "Reconstruct a quantum process",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Error Correction, Mitigation and Characterization",
+      "name": "Randomized Benchmarking",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-experiments/",
+        "https://qiskit.github.io/qiskit-aer/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-experiments",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "randomized-benchmarking",
+      "status": "design_reference",
+      "summary": "Estimate average gate error using randomized Clifford sequences",
+      "template_pattern": "generic",
+      "use_cases": [
+        "noise characterization",
+        "mitigation",
+        "validation"
+      ]
+    },
+    {
+      "category": "Application Patterns",
+      "name": "Option Pricing with Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "option-pricing",
+      "status": "starter",
+      "summary": "Estimate expected option payoff using amplitude estimation",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "finance",
+        "operations research",
+        "Monte Carlo"
+      ]
+    },
+    {
+      "category": "Application Patterns",
+      "name": "Quantum Risk Analysis",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "risk-analysis",
+      "status": "starter",
+      "summary": "Estimate loss probabilities and risk measures",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "finance",
+        "operations research",
+        "Monte Carlo"
+      ]
+    },
+    {
+      "category": "Application Patterns",
+      "name": "Monte Carlo via Amplitude Estimation",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-algorithms/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-algorithms",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "sampler",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "monte-carlo-amplitude-estimation",
+      "status": "starter",
+      "summary": "Estimate expectations with amplitude-estimation routines",
+      "template_pattern": "amplitude",
+      "use_cases": [
+        "finance",
+        "operations research",
+        "Monte Carlo"
+      ]
+    },
+    {
+      "category": "Application Patterns",
+      "name": "Supply-Chain QAOA",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "supply-chain-qaoa",
+      "status": "starter",
+      "summary": "Map routing or scheduling decisions to QUBO and solve with QAOA",
+      "template_pattern": "variational",
+      "use_cases": [
+        "finance",
+        "operations research",
+        "Monte Carlo"
+      ]
+    },
+    {
+      "category": "Application Patterns",
+      "name": "Scheduling QAOA",
+      "official_references": [
+        "https://pypi.org/project/qiskit/2.5.0/",
+        "https://quantum.cloud.ibm.com/docs/en/guides/qiskit-runtime-primitives",
+        "https://qiskit-community.github.io/qiskit-optimization/"
+      ],
+      "open_plan": "No Session. Use SamplerV2(mode=backend) for sampling/counts or EstimatorV2(mode=backend) for expectation values/energy, according to the primitive field.",
+      "packages": [
+        "qiskit",
+        "qiskit-optimization",
+        "qiskit-ibm-runtime",
+        "qiskit-aer",
+        "qiskit-connector"
+      ],
+      "paid_plan": "Use Session(backend=backend) and SamplerV2(mode=session) or EstimatorV2(mode=session), according to the primitive field.",
+      "primitive": "estimator",
+      "qiskit_min_version": "2.5.0",
+      "qubits": "problem-dependent",
+      "result_contract": "Emit BQCA_EXECUTION_TARGET, BQCA_PLAN, BQCA_BACKEND, BQCA_JOB_ID for real QPU, BQCA_FALLBACK_REASON for fallback, BQCA_RESULT=SUCCESS|FAILURE, and BQCA_RESULT_VALUE for scientific output.",
+      "simulator": "Fallback only after real-QPU eligibility/attempt failure. Use try/except with transpilation and AerSimulator or Aer V2 primitives.",
+      "slug": "scheduling-qaoa",
+      "status": "starter",
+      "summary": "Hybrid scheduling optimization",
+      "template_pattern": "variational",
+      "use_cases": [
+        "finance",
+        "operations research",
+        "Monte Carlo"
+      ]
+    }
+  ],
+  "policy_notes": {
+    "open_plan": "No Session. Use SamplerV2(mode=backend) or EstimatorV2(mode=backend) as suitable.",
+    "paid_plan": "Use Session(backend=backend) with SamplerV2(mode=session) or EstimatorV2(mode=session).",
+    "real_qpu_first": true,
+    "simulator": "Use controlled fallback with AerSimulator or Aer V2 primitives.",
+    "url_crawling_required": false
+  },
+  "qiskit_min_version": "2.5.0",
+  "schema_version": 1
+}

@@ -1,0 +1,6 @@
+Patch: BQCA.v47-update-4
+Created: 2026-07-24T18:31:36Z
+Appliance root: /home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent
+Protected assets excluded: .env, bob-quantum-store, bob-quantum-designs, home Qiskit environment, account JSON
+Restore with:
+  patch-BQCA.v47-update-4.sh --target "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent" --rollback "/home/architect/IBM-SOFTWARE-LAB2/quantum-computing-agent/.bob/patch-backups/BQCA.v47-update-4.20260724143135"
