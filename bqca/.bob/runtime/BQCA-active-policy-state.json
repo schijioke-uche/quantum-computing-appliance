@@ -360,6 +360,6 @@
   "policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
   "registry_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-ACTIVE-POLICY-REGISTRY.json",
   "schema_version": 1,
-  "synced_utc": "2026-10-09T19:30:21Z",
+  "synced_utc": "2026-10-09T21:13:40Z",
   "versioned_policy_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY-v48.md"
 }

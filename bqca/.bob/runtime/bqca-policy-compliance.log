@@ -6389,3 +6389,741 @@
 2026-10-09T15:30:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment-code-policy-compliance.txt
 2026-10-09T15:30:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
 2026-10-09T15:30:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment-code-policy-compliance.txt
+2026-10-09T17:13:20-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+2026-10-09T17:13:20-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:20-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:20-0400     - missing risk or limitation discussion
+2026-10-09T17:13:20-0400     - missing validation criteria
+2026-10-09T17:13:20-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:20-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:20-0400     - missing home environment activation command
+2026-10-09T17:13:20-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:20-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:20-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:20-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:20-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:20-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:20-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:20-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:20-0400     - missing direct-execution wrapper
+2026-10-09T17:13:20-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:20-0400     - missing authoritative result filename
+2026-10-09T17:13:20-0400     - missing output.txt mirror
+2026-10-09T17:13:20-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:20-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:20-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:20-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:20-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:20-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt
+2026-10-09T17:13:20-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:20-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:20-0400     - missing risk or limitation discussion
+2026-10-09T17:13:20-0400     - missing validation criteria
+2026-10-09T17:13:20-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:20-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:20-0400     - missing home environment activation command
+2026-10-09T17:13:20-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:20-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:20-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:20-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:20-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:20-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:20-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:20-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:20-0400     - missing direct-execution wrapper
+2026-10-09T17:13:20-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:20-0400     - missing authoritative result filename
+2026-10-09T17:13:20-0400     - missing output.txt mirror
+2026-10-09T17:13:20-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:20-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:20-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:20-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:20-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:20-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md
+2026-10-09T17:13:20-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design-policy-compliance.txt
+2026-10-09T17:13:20-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md
+2026-10-09T17:13:20-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design-policy-compliance.txt
+2026-10-09T17:13:20-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt
+2026-10-09T17:13:20-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:20-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:20-0400     - missing risk or limitation discussion
+2026-10-09T17:13:20-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:20-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:20-0400     - missing home environment activation command
+2026-10-09T17:13:20-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:20-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:20-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:20-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:20-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:20-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:20-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:20-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:20-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:20-0400     - missing direct-execution wrapper
+2026-10-09T17:13:20-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:20-0400     - missing authoritative result filename
+2026-10-09T17:13:20-0400     - missing output.txt mirror
+2026-10-09T17:13:20-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:20-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:20-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:20-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:20-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:21-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md
+2026-10-09T17:13:21-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design-policy-compliance.txt
+2026-10-09T17:13:21-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt
+2026-10-09T17:13:21-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:21-0400     - missing problem/objective statement
+2026-10-09T17:13:21-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:21-0400     - missing risk or limitation discussion
+2026-10-09T17:13:21-0400     - missing validation criteria
+2026-10-09T17:13:21-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:21-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:21-0400     - missing home environment activation command
+2026-10-09T17:13:21-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:21-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:21-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:21-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:21-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:21-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:21-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:21-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:21-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:21-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:21-0400     - missing direct-execution wrapper
+2026-10-09T17:13:21-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:21-0400     - missing authoritative result filename
+2026-10-09T17:13:21-0400     - missing output.txt mirror
+2026-10-09T17:13:21-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:21-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:21-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:21-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:21-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:21-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt
+2026-10-09T17:13:21-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:21-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:21-0400     - missing qubit or circuit strategy
+2026-10-09T17:13:21-0400     - missing risk or limitation discussion
+2026-10-09T17:13:21-0400     - missing validation criteria
+2026-10-09T17:13:21-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:21-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:21-0400     - missing home environment activation command
+2026-10-09T17:13:21-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:21-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:21-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:21-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:21-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:21-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:21-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:21-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:21-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:21-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:21-0400     - missing direct-execution wrapper
+2026-10-09T17:13:21-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:21-0400     - missing authoritative result filename
+2026-10-09T17:13:21-0400     - missing output.txt mirror
+2026-10-09T17:13:21-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:21-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:21-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:21-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:21-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:21-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md
+2026-10-09T17:13:21-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design-policy-compliance.txt
+2026-10-09T17:13:21-0400     - missing problem/objective statement
+2026-10-09T17:13:21-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:21-0400     - missing risk or limitation discussion
+2026-10-09T17:13:21-0400     - missing validation criteria
+2026-10-09T17:13:21-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:21-0400     - missing home environment activation command
+2026-10-09T17:13:21-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:21-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:21-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:21-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:21-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:21-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:21-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:21-0400     - missing direct-execution wrapper
+2026-10-09T17:13:21-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:21-0400     - missing authoritative result filename
+2026-10-09T17:13:21-0400     - missing output.txt mirror
+2026-10-09T17:13:21-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:21-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:21-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:21-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:21-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+2026-10-09T17:13:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment-code-policy-compliance.txt
+2026-10-09T17:13:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+2026-10-09T17:13:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment-code-policy-compliance.txt
+2026-10-09T17:13:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+2026-10-09T17:13:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct-code-policy-compliance.txt
+2026-10-09T17:13:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py
+2026-10-09T17:13:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:21-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py
+2026-10-09T17:13:21-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:22-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py
+2026-10-09T17:13:22-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment-code-policy-compliance.txt
+2026-10-09T17:13:22-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py
+2026-10-09T17:13:22-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit-code-policy-compliance.txt
+2026-10-09T17:13:22-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py
+2026-10-09T17:13:22-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment-code-policy-compliance.txt
+2026-10-09T17:13:22-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py
+2026-10-09T17:13:22-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment-code-policy-compliance.txt
+2026-10-09T17:13:22-0400 START root=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing validation criteria
+2026-10-09T17:13:23-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:23-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing validation criteria
+2026-10-09T17:13:23-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:23-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design-policy-compliance.txt
+2026-10-09T17:13:23-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design-policy-compliance.txt
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:23-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design-policy-compliance.txt
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing problem/objective statement
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing validation criteria
+2026-10-09T17:13:23-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:23-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing qubit or circuit strategy
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing validation criteria
+2026-10-09T17:13:23-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:23-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md
+2026-10-09T17:13:23-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design-policy-compliance.txt
+2026-10-09T17:13:23-0400     - missing problem/objective statement
+2026-10-09T17:13:23-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:23-0400     - missing risk or limitation discussion
+2026-10-09T17:13:23-0400     - missing validation criteria
+2026-10-09T17:13:23-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:23-0400     - missing home environment activation command
+2026-10-09T17:13:23-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:23-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:23-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:23-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:23-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:23-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:23-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:23-0400     - missing direct-execution wrapper
+2026-10-09T17:13:23-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:23-0400     - missing authoritative result filename
+2026-10-09T17:13:23-0400     - missing output.txt mirror
+2026-10-09T17:13:23-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:23-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:23-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:23-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:23-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:23-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+2026-10-09T17:13:23-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment-code-policy-compliance.txt
+2026-10-09T17:13:24-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py
+2026-10-09T17:13:24-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit-code-policy-compliance.txt
+2026-10-09T17:13:25-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py
+2026-10-09T17:13:25-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment-code-policy-compliance.txt
+2026-10-09T17:13:25-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py
+2026-10-09T17:13:25-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment-code-policy-compliance.txt
+2026-10-09T17:13:25-0400 POLICY_CHANGED version=v48 policy_sha256=63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461 contract_sha256=dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
+2026-10-09T17:13:26-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+2026-10-09T17:13:26-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:26-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:26-0400     - missing risk or limitation discussion
+2026-10-09T17:13:26-0400     - missing validation criteria
+2026-10-09T17:13:26-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:26-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:26-0400     - missing home environment activation command
+2026-10-09T17:13:26-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:26-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:26-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:26-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:26-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:26-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:26-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:26-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:26-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:26-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:26-0400     - missing direct-execution wrapper
+2026-10-09T17:13:26-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:26-0400     - missing authoritative result filename
+2026-10-09T17:13:26-0400     - missing output.txt mirror
+2026-10-09T17:13:26-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:26-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:26-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:26-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:26-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:27-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:27-0400     - missing risk or limitation discussion
+2026-10-09T17:13:27-0400     - missing validation criteria
+2026-10-09T17:13:27-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:27-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:27-0400     - missing home environment activation command
+2026-10-09T17:13:27-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:27-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:27-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:27-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:27-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:27-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:27-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:27-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:27-0400     - missing direct-execution wrapper
+2026-10-09T17:13:27-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:27-0400     - missing authoritative result filename
+2026-10-09T17:13:27-0400     - missing output.txt mirror
+2026-10-09T17:13:27-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:27-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:27-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:27-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:27-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design-policy-compliance.txt
+2026-10-09T17:13:27-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design-policy-compliance.txt
+2026-10-09T17:13:27-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:27-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:27-0400     - missing risk or limitation discussion
+2026-10-09T17:13:27-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:27-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:27-0400     - missing home environment activation command
+2026-10-09T17:13:27-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:27-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:27-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:27-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:27-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:27-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:27-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:27-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:27-0400     - missing direct-execution wrapper
+2026-10-09T17:13:27-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:27-0400     - missing authoritative result filename
+2026-10-09T17:13:27-0400     - missing output.txt mirror
+2026-10-09T17:13:27-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:27-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:27-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:27-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:27-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design-policy-compliance.txt
+2026-10-09T17:13:27-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:27-0400     - missing problem/objective statement
+2026-10-09T17:13:27-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:27-0400     - missing risk or limitation discussion
+2026-10-09T17:13:27-0400     - missing validation criteria
+2026-10-09T17:13:27-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:27-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:27-0400     - missing home environment activation command
+2026-10-09T17:13:27-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:27-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:27-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:27-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:27-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:27-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:27-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:27-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:27-0400     - missing direct-execution wrapper
+2026-10-09T17:13:27-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:27-0400     - missing authoritative result filename
+2026-10-09T17:13:27-0400     - missing output.txt mirror
+2026-10-09T17:13:27-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:27-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:27-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:27-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:27-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:27-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:27-0400     - missing qubit or circuit strategy
+2026-10-09T17:13:27-0400     - missing risk or limitation discussion
+2026-10-09T17:13:27-0400     - missing validation criteria
+2026-10-09T17:13:27-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:27-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:27-0400     - missing home environment activation command
+2026-10-09T17:13:27-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:27-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:27-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:27-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:27-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:27-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:27-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:27-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:27-0400     - missing direct-execution wrapper
+2026-10-09T17:13:27-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:27-0400     - missing authoritative result filename
+2026-10-09T17:13:27-0400     - missing output.txt mirror
+2026-10-09T17:13:27-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:27-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:27-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:27-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:27-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md
+2026-10-09T17:13:27-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design-policy-compliance.txt
+2026-10-09T17:13:27-0400     - missing problem/objective statement
+2026-10-09T17:13:27-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:27-0400     - missing risk or limitation discussion
+2026-10-09T17:13:27-0400     - missing validation criteria
+2026-10-09T17:13:27-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:27-0400     - missing home environment activation command
+2026-10-09T17:13:27-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:27-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:27-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:27-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:27-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:27-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:27-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:27-0400     - missing direct-execution wrapper
+2026-10-09T17:13:27-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:27-0400     - missing authoritative result filename
+2026-10-09T17:13:27-0400     - missing output.txt mirror
+2026-10-09T17:13:27-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:27-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:27-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:27-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:27-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:27-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+2026-10-09T17:13:27-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment-code-policy-compliance.txt
+2026-10-09T17:13:27-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+2026-10-09T17:13:27-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment-code-policy-compliance.txt
+2026-10-09T17:13:27-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+2026-10-09T17:13:27-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment-code-policy-compliance.txt
+2026-10-09T17:13:28-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py
+2026-10-09T17:13:28-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment-code-policy-compliance.txt
+2026-10-09T17:13:38-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:38-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:38-0400     - missing risk or limitation discussion
+2026-10-09T17:13:38-0400     - missing validation criteria
+2026-10-09T17:13:38-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:38-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:38-0400     - missing home environment activation command
+2026-10-09T17:13:38-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:38-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:38-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:38-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:38-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:38-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:38-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:38-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:38-0400     - missing direct-execution wrapper
+2026-10-09T17:13:38-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:38-0400     - missing authoritative result filename
+2026-10-09T17:13:38-0400     - missing output.txt mirror
+2026-10-09T17:13:38-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:38-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:38-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:38-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:38-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:38-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/reaction-barrier-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:38-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:38-0400     - missing risk or limitation discussion
+2026-10-09T17:13:38-0400     - missing validation criteria
+2026-10-09T17:13:38-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:38-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:38-0400     - missing home environment activation command
+2026-10-09T17:13:38-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:38-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:38-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:38-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:38-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:38-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:38-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:38-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:38-0400     - missing direct-execution wrapper
+2026-10-09T17:13:38-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:38-0400     - missing authoritative result filename
+2026-10-09T17:13:38-0400     - missing output.txt mirror
+2026-10-09T17:13:38-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:38-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:38-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:38-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:38-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:38-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/hello-world-2qubit/hello-world-2qubit-design-policy-compliance.txt
+2026-10-09T17:13:38-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/shor-factoring-direct/shor-factoring-direct-design-policy-compliance.txt
+2026-10-09T17:13:38-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/measurement-time-allocation-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:38-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:38-0400     - missing risk or limitation discussion
+2026-10-09T17:13:38-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:38-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:38-0400     - missing home environment activation command
+2026-10-09T17:13:38-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:38-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:38-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:38-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:38-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:38-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:38-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:38-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:38-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:38-0400     - missing direct-execution wrapper
+2026-10-09T17:13:38-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:38-0400     - missing authoritative result filename
+2026-10-09T17:13:38-0400     - missing output.txt mirror
+2026-10-09T17:13:38-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:38-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:38-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:38-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:38-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:38-0400 PASS kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md
+2026-10-09T17:13:38-0400   BQCA_QISKIT_DESIGN_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/bell-gate-4qubit/bell-gate-4qubit-design-policy-compliance.txt
+2026-10-09T17:13:39-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt
+2026-10-09T17:13:39-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/execution-time-uncertainty-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:39-0400     - missing problem/objective statement
+2026-10-09T17:13:39-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:39-0400     - missing risk or limitation discussion
+2026-10-09T17:13:39-0400     - missing validation criteria
+2026-10-09T17:13:39-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:39-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:39-0400     - missing home environment activation command
+2026-10-09T17:13:39-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:39-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:39-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:39-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:39-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:39-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:39-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:39-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:39-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:39-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:39-0400     - missing direct-execution wrapper
+2026-10-09T17:13:39-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:39-0400     - missing authoritative result filename
+2026-10-09T17:13:39-0400     - missing output.txt mirror
+2026-10-09T17:13:39-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:39-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:39-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:39-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:39-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:39-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt
+2026-10-09T17:13:39-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report.txt compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/entanglement-routing-experiment/experiment_report-design-policy-compliance.txt
+2026-10-09T17:13:39-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:39-0400     - missing qubit or circuit strategy
+2026-10-09T17:13:39-0400     - missing risk or limitation discussion
+2026-10-09T17:13:39-0400     - missing validation criteria
+2026-10-09T17:13:39-0400     - missing Qiskit Connector strategy
+2026-10-09T17:13:39-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:39-0400     - missing home environment activation command
+2026-10-09T17:13:39-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:39-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:39-0400     - missing Open Plan SamplerV2(mode=backend) option
+2026-10-09T17:13:39-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:39-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:39-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:39-0400     - missing controlled try/except fallback requirement
+2026-10-09T17:13:39-0400     - missing AerSimulator fallback requirement
+2026-10-09T17:13:39-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:39-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:39-0400     - missing direct-execution wrapper
+2026-10-09T17:13:39-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:39-0400     - missing authoritative result filename
+2026-10-09T17:13:39-0400     - missing output.txt mirror
+2026-10-09T17:13:39-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:39-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:39-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:39-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:39-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:39-0400 NON_COMPLIANT kind=design artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md
+2026-10-09T17:13:39-0400   BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design.md compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/superposition-156qubit/superposition-156qubit-circuit-design-policy-compliance.txt
+2026-10-09T17:13:39-0400     - missing problem/objective statement
+2026-10-09T17:13:39-0400     - missing algorithm selection or rationale
+2026-10-09T17:13:39-0400     - missing risk or limitation discussion
+2026-10-09T17:13:39-0400     - missing validation criteria
+2026-10-09T17:13:39-0400     - missing home-scoped qiskit-v2x-env path
+2026-10-09T17:13:39-0400     - missing home environment activation command
+2026-10-09T17:13:39-0400     - missing Qiskit 2.5-or-later requirement
+2026-10-09T17:13:39-0400     - missing Open Plan no-Session rule
+2026-10-09T17:13:39-0400     - missing Open Plan EstimatorV2(mode=backend) option
+2026-10-09T17:13:39-0400     - missing Paid Plan Session strategy
+2026-10-09T17:13:39-0400     - missing Paid Plan Runtime primitive requirement
+2026-10-09T17:13:39-0400     - missing simulator transpilation requirement
+2026-10-09T17:13:39-0400     - missing real-QPU backend.run prohibition
+2026-10-09T17:13:39-0400     - missing direct-execution wrapper
+2026-10-09T17:13:39-0400     - missing formal orchestrator opt-in scope
+2026-10-09T17:13:39-0400     - missing authoritative result filename
+2026-10-09T17:13:39-0400     - missing output.txt mirror
+2026-10-09T17:13:39-0400     - missing complete live stdout/stderr requirement
+2026-10-09T17:13:39-0400     - missing result timing/duration/exit-status requirements
+2026-10-09T17:13:39-0400     - missing real-QPU Job ID line-one requirement
+2026-10-09T17:13:39-0400     - missing RESULT SUMMARY requirement
+2026-10-09T17:13:39-0400     - missing direct-mode non-blocking policy-gap rule
+2026-10-09T17:13:39-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+2026-10-09T17:13:39-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment-code-policy-compliance.txt
+2026-10-09T17:13:39-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+2026-10-09T17:13:39-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment-code-policy-compliance.txt
+2026-10-09T17:13:39-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py
+2026-10-09T17:13:39-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-factoring-direct/shor-factoring-direct-code-policy-compliance.txt
+2026-10-09T17:13:39-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py
+2026-10-09T17:13:39-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/test/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:40-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py
+2026-10-09T17:13:40-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/hello-world/hello-world-code-policy-compliance.txt
+2026-10-09T17:13:40-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py
+2026-10-09T17:13:40-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/measurement-time-allocation-experiment/measurement_time_allocation_experiment-code-policy-compliance.txt
+2026-10-09T17:13:40-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py
+2026-10-09T17:13:40-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/bell-gate-4qubit/bell-gate-4qubit-code-policy-compliance.txt
+2026-10-09T17:13:40-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py
+2026-10-09T17:13:40-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/execution-time-uncertainty-experiment/uncertainty_backend_selection_experiment-code-policy-compliance.txt
+2026-10-09T17:13:40-0400 PASS kind=code artifact=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py
+2026-10-09T17:13:40-0400   BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment.py compliance_report=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/entanglement-routing-experiment/entanglement_routing_experiment-code-policy-compliance.txt

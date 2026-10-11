@@ -6,7 +6,7 @@ Artifact type           : code
 Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
 Active policy SHA-256   : 63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461
 Validation contract SHA : dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
-Validation date/time    : 2026-10-09T15:14:09.500409-04:00
+Validation date/time    : 2026-10-09T17:13:40.377474-04:00
 Artifact SHA-256        : f277ec72e7fb474e4ecb70463e098ab699f227592b10b6ba98b663a55f033ff2
 ----------------------------------------------------------------------------------------
 VALIDATION GATES

@@ -78,12 +78,12 @@ Before installing the BQCA appliance, ensure the following are available on your
 
 ### Step 1 — Clone the Repository
 
-```bash
-git clone <repository-url> IBM-BOB-APPLIANCES
-cd IBM-BOB-APPLIANCES/bob-quantum-computing-appliance
-```
+The `main` branch is the only available branch.
 
-Replace `<repository-url>` with the actual repository URL.
+```bash
+git clone https://github.com/IBM/bob-quantum-computing-appliance.git
+cd bob-quantum-computing-appliance
+```
 
 > The working directory for all subsequent steps is `bob-quantum-computing-appliance/` — the repository root that contains `xLaunchpad.sh`. The `bqca/` subdirectory is the appliance payload and is managed internally by the launchers.
 
