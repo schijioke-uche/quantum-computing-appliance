@@ -44,7 +44,7 @@
 
 ## Overview
 
-The **IBM Bob Quantum Computing Agent (BQCA)** is a production-grade appliance that integrates IBM Bob Shell (v1.x and v2.x) with IBM Quantum computing resources via Qiskit 2.5+. It provides a governed, menu-driven interface for:
+The **IBM Quantum Computing Appliance (QCA)** is a production-grade appliance that integrates IBM Bob Shell (v1.x and v2.x) with IBM Quantum computing resources via Qiskit 2.5+. It provides a governed, menu-driven interface for:
 
 - Interacting with IBM Quantum backends (real QPU and simulator)
 - Designing, generating, and executing quantum circuits
@@ -58,7 +58,7 @@ The appliance follows a **Real-QPU-first / controlled simulator fallback** execu
 
 ## Prerequisites
 
-Before installing the BQCA appliance, ensure the following are available on your system:
+Before installing the QCA appliance, ensure the following are available on your system:
 
 | Requirement | Version | Notes |
 |---|---|---|
@@ -134,12 +134,12 @@ The table below documents every variable in `.env.example`:
 | `QCA_DESIGN_DIR` | auto | `${APPLIANCE_ROOT}/bob-quantum-designs` |
 | `QCA_STORE_DIR` | auto | `${APPLIANCE_ROOT}/bob-quantum-store` |
 | `BOB_INCLUDED_DIRECTORY` | auto | Comma-separated list of `QCA_STORE_DIR` and `QCA_DESIGN_DIR` passed to Bob |
-| `APPLIANCE_NAME` | auto | `IBM Bob Quantum Computing Agent (BQCA)` |
+| `APPLIANCE_NAME` | auto | `IBM Quantum Computing Appliance (QCA)` |
 | `BQCA_BOB2_OUTPUT_FORMAT` | optional | `pretty` \| `json` \| `stream-json` (default: `pretty`) |
 | `BQCA_BOB2_MAX_TURNS` | optional | Max agentic turns per run session (default: `50`) |
 | `BQCA_BOB2_LOG_LEVEL` | optional | `error` \| `warn` \| `info` \| `debug` \| `trace` (default: `warn`) |
 | `BQCA_CHAT_AUTO_APPROVE` | optional | `1` = auto-approve tool calls in interactive sessions (default: `1`) |
-| `BQCA_BOB2_DNA_ENVELOPE` | optional | `1` = inject BQCA project context into Bob 2.x non-interactive runs (default: `1`) |
+| `BQCA_BOB2_DNA_ENVELOPE` | optional | `1` = inject QCA project context into Bob 2.x non-interactive runs (default: `1`) |
 | `BQCA_BOB2_INTERACTIVE_MODE` | optional | Override interactive chat mode (default: `quantum-qiskit-connector`) |
 | `BQCA_BOB2_ASK_MODE` | optional | Override ask mode (default: `quantum-smart`) |
 | `BQCA_BOB2_CODE_MODE` | optional | Override code mode (default: `quantum-code-heron`) |
@@ -153,7 +153,7 @@ The table below documents every variable in `.env.example`:
 
 ### Step 3 — Set Up the Qiskit Environment
 
-The only authorized BQCA Qiskit runtime is located at `$HOME/qiskit-v2x-env`. A project-local virtual environment is **prohibited**.
+The only authorized QCA Qiskit runtime is located at `$HOME/qiskit-v2x-env`. A project-local virtual environment is **prohibited**.
 
 ```bash
 # Create the home-scoped Qiskit virtual environment
@@ -209,7 +209,7 @@ Authentication is performed automatically when the appliance launches via `iLaun
 4. **Bob Shell 2.x path:** `BOB_API_KEY` is exported directly; no credential files are manufactured. A backend probe validates connectivity.
 
 **Bob Shell 2.x Authentication Probe:**
-The 2.x auth script runs a lightweight isolated probe (`bob run --mode ask --max-turns 1`) in a temporary workspace to confirm the API key is valid and the backend is reachable. The probe workspace is never part of your BQCA project, so it does not pollute the task history.
+The 2.x auth script runs a lightweight isolated probe (`bob run --mode ask --max-turns 1`) in a temporary workspace to confirm the API key is valid and the backend is reachable. The probe workspace is never part of your QCA project, so it does not pollute the task history.
 
 ---
 
@@ -298,23 +298,23 @@ After launch, the appliance presents an interactive menu:
 
 ```
 +-----------------------------------------------------------------------------------------------+
-| IBM Bob Quantum Computing Agent (BQCA)                                                        |
+| IBM Quantum Computing Appliance (QCA)                                                        |
 | This is Quantum Computing Agent, built & integrated with IBM Bob Intelligence                 |
 +-----------------------------------------------------------------------------------------------+
 | No.  | Action                                                         | Skill ID           |
 +-----------------------------------------------------------------------------------------------+
-| 1    | Start Interactive BQCA Session                                 | User Interactive   |
+| 1    | Start Interactive QCA Session                                 | User Interactive   |
 | 2    | Ask Quantum Computing Questions                                | Quantum Expert     |
 | 3    | Quantum Computing Algorithm Implementation Concierge           | Quantum Developer  |
 | 4    | Advanced Quantum Computing Solution Design Concierge           | Quantum Advanced   |
-| 5    | Resume BQCA Last Activity (Picks: 1, 2, 3, or 4 last action)  | Resume Session     |
+| 5    | Resume QCA Last Activity (Picks: 1, 2, 3, or 4 last action)  | Resume Session     |
 | 0    | Quit                                                           | Exit               |
 +-----------------------------------------------------------------------------------------------+
 ```
 
 | Option | Description | Bob Mode |
 |--------|-------------|----------|
-| **1** | Opens a trusted interactive BQCA chat session. Supports full session-level auto-approval for skill, file, and command operations. | `quantum-qiskit-connector` |
+| **1** | Opens a trusted interactive QCA chat session. Supports full session-level auto-approval for skill, file, and command operations. | `quantum-qiskit-connector` |
 | **2** | Accepts a free-text quantum computing question; returns an expert explanation. Hello World execution is intercepted and runs the existing artifact directly. | `quantum-smart` |
 | **3** | Accepts a prompt and generates a complete Qiskit implementation including Python source, notebook, compliance report, and result-output files. | `quantum-code-heron` |
 | **4** | Accepts a prompt and generates a textual solution design saved to `bob-quantum-designs/`. | `quantum-advanced` |
@@ -350,7 +350,7 @@ bob-quantum-computing-appliance/         ← repository root
     │
     ├── .env.example                     # Annotated environment template (safe to commit — no secrets)
     ├── .env                             # Operator credentials (NOT committed to version control)
-    ├── AGENTS.md                        # BQCA project context for Bob Shell 2.x
+    ├── AGENTS.md                        # QCA project context for Bob Shell 2.x
     ├── bob-auth.md                      # Authentication documentation
     ├── LICENSE                          # Project license
     │
@@ -368,7 +368,7 @@ bob-quantum-computing-appliance/         ← repository root
     │
     ├── bob-quantum-store/               # Implementation artifacts (Python, notebooks, results)
     │   ├── readme.md
-    │   ├── vqe-kb-research.md           # VQE knowledgebase research trace (BQCA KB artifact)
+    │   ├── vqe-kb-research.md           # VQE knowledgebase research trace (QCA KB artifact)
     │   ├── hello-world/
     │   ├── bell-gate-4qubit/
     │   ├── shor-factoring-direct/
@@ -381,11 +381,11 @@ bob-quantum-computing-appliance/         ← repository root
     │
     ├── patches/                         # Incremental appliance patches
     │   ├── patch.md
-    │   └── BQCA/
-    │       ├── patch-BQCA-v48.sh
-    │       ├── patch-BQCA-v49.sh
-    │       ├── patch-BQCA-v50.sh  …
-    │       ├── patch-BQCA-v51.0.sh … patch-BQCA-v51.4.sh
+    │   └── QCA/
+    │       ├── patch-QCA-v48.sh
+    │       ├── patch-QCA-v49.sh
+    │       ├── patch-QCA-v50.sh  …
+    │       ├── patch-QCA-v51.0.sh … patch-QCA-v51.4.sh
     │       ├── upgrade-patch.sh
     │       ├── bob-version.sh
     │       └── policy-history/          # Versioned policy audit trail
@@ -432,7 +432,7 @@ Contains **design-only Markdown artifacts** for every quantum experiment. Each s
 | File | Purpose |
 |---|---|
 | `<experiment>-design.md` | Full circuit design: algorithm rationale, gate sequence, runtime contract, execution markers, artifact routing |
-| `<experiment>-design-policy-compliance.txt` | Active-policy compliance report generated automatically by the BQCA compliance sweep |
+| `<experiment>-design-policy-compliance.txt` | Active-policy compliance report generated automatically by the QCA compliance sweep |
 
 Design artifacts are **not executable Python**. They define the specification that Option 3 (Quantum Developer) implements.
 
@@ -457,17 +457,17 @@ Top-level files in `bob-quantum-store/` that are not experiment subdirectories:
 
 | File | Purpose |
 |---|---|
-| `vqe-kb-research.md` | Knowledgebase research trace generated by the BQCA quantum KB tool for the VQE / Variational Quantum Eigensolver topic |
+| `vqe-kb-research.md` | Knowledgebase research trace generated by the QCA quantum KB tool for the VQE / Variational Quantum Eigensolver topic |
 
 ---
 
 ## Knowledgebase Research Traces
 
-The BQCA appliance generates **knowledgebase research trace files** (`*-kb-research.md`) when the BQCA quantum knowledgebase tool (`bqca-quantum-kb.sh`) is invoked to research a topic before design or code generation. These files are stored in `bob-quantum-store/` at the top level and record:
+The QCA appliance generates **knowledgebase research trace files** (`*-kb-research.md`) when the QCA quantum knowledgebase tool (`bqca-quantum-kb.sh`) is invoked to research a topic before design or code generation. These files are stored in `bob-quantum-store/` at the top level and record:
 
 | Field | Description |
 |---|---|
-| `Policy/tool version` | The BQCA policy and tool version active at research time |
+| `Policy/tool version` | The QCA policy and tool version active at research time |
 | `Research status` | `OK` (all seeds accessed) or `FAIL` (one or more seeds unreachable) |
 | `Generated` | ISO-8601 UTC timestamp of the research run |
 | `User topic/query` | The quantum computing topic that was researched |
@@ -476,7 +476,7 @@ The BQCA appliance generates **knowledgebase research trace files** (`*-kb-resea
 
 > **`FAIL` status on `vqe-kb-research.md`:** The current trace shows `FAIL` because the seed URLs could not be reached due to an SSL certificate verification error (`CERTIFICATE_VERIFY_FAILED`). This is an environment-level TLS trust issue — it does not affect the appliance's execution of quantum circuits. To resolve it, configure `BOB_NODE_EXTRA_CA_CERTS` in `.env` with your enterprise CA certificate, or run the appliance in an environment with the required CA installed.
 
-Research traces are informational artifacts. They supplement IBM Bob intelligence and do not override the active BQCA central policy, Qiskit version requirements, or human scientific review.
+Research traces are informational artifacts. They supplement IBM Bob intelligence and do not override the active QCA central policy, Qiskit version requirements, or human scientific review.
 
 ---
 
@@ -494,10 +494,10 @@ Research traces are informational artifacts. They supplement IBM Bob intelligenc
 | **Reaction Barrier** | Variable | Chemistry | VQE-based quantum chemistry: H₂ potential energy surface and reaction barrier estimation |
 | **Tail Latency Decoder** | Variable | Research | Quantum error correction decoder performance and tail-latency characterization |
 
-Each experiment follows the BQCA production execution contract:
+Each experiment follows the QCA production execution contract:
 - Real QPU first via Qiskit Connector (`QConnectorV2`, `QPlanV2`)
 - Controlled `AerSimulator` fallback on QPU unavailability
-- All required BQCA execution markers (`BQCA_EXECUTION_TARGET`, `BQCA_PLAN`, `BQCA_BACKEND`, `BQCA_JOB_ID`, `BQCA_RESULT`)
+- All required QCA execution markers (`BQCA_EXECUTION_TARGET`, `BQCA_PLAN`, `BQCA_BACKEND`, `BQCA_JOB_ID`, `BQCA_RESULT`)
 - Plan-aware primitive selection (`SamplerV2` for sampling, `EstimatorV2` for expectation values)
 
 ---
@@ -560,20 +560,20 @@ The cleaner creates a timestamped backup before editing and validates the RC fil
 
 ## Patches
 
-The `patches/BQCA/` directory contains incremental appliance patches that extend the policy, tooling, and runtime behavior. Each patch is a standalone Bash script named after its version token (e.g., `patch-BQCA-v51.4.sh`).
+The `patches/QCA/` directory contains incremental appliance patches that extend the policy, tooling, and runtime behavior. Each patch is a standalone Bash script named after its version token (e.g., `patch-QCA-v51.4.sh`).
 
-**Policy history** is preserved in `patches/BQCA/policy-history/` as versioned Markdown files and a JSON manifest (`BQCA-policy-history-manifest.json`). These are audit records and are not active unless the policy registry explicitly references them.
+**Policy history** is preserved in `patches/QCA/policy-history/` as versioned Markdown files and a JSON manifest (`QCA-policy-history-manifest.json`). These are audit records and are not active unless the policy registry explicitly references them.
 
 To apply the latest patch:
 
 ```bash
-bash patches/BQCA/patch-BQCA-v51.4.sh
+bash patches/QCA/patch-QCA-v51.4.sh
 ```
 
 To apply the upgrade patch:
 
 ```bash
-bash patches/BQCA/upgrade-patch.sh
+bash patches/QCA/upgrade-patch.sh
 ```
 
 ---
@@ -609,9 +609,9 @@ The appliance enforces several security controls:
 - **Credential isolation:** API keys, IBM Quantum tokens, and Bob session credentials are read exclusively from `.env` and are never written to design artifacts, code, notebooks, logs, compliance reports, or terminal prompts.
 - **TLS enforcement:** `tls-control.sh` ensures `NODE_TLS_REJECT_UNAUTHORIZED` is never set to `0`. Enterprise CAs are supported via `NODE_EXTRA_CA_CERTS`.
 - **Restricted file permissions:** `~/.bob/token.json` and `~/.bob/config.json` are always written with mode `600`. The `~/.bob/` directory is mode `700`.
-- **Auth probe isolation (Bob 2.x):** The backend validation probe runs in a throwaway temporary workspace, preventing probe activity from polluting the BQCA project task history.
+- **Auth probe isolation (Bob 2.x):** The backend validation probe runs in a throwaway temporary workspace, preventing probe activity from polluting the QCA project task history.
 - **Credential masking:** If the authentication probe fails, diagnostic output is scanned for any occurrence of `BOB_API_KEY` and replaced with `***REDACTED***` before being printed.
-- **Auto-approval scope:** Interactive session auto-approval is confined to the trusted BQCA project. It does not authorize credential access, destructive system actions, writes outside the project root, or bypass of BQCA validators and policy gates.
+- **Auto-approval scope:** Interactive session auto-approval is confined to the trusted QCA project. It does not authorize credential access, destructive system actions, writes outside the project root, or bypass of QCA validators and policy gates.
 
 ---
 
@@ -621,4 +621,4 @@ See [`LICENSE`](./LICENSE) for the project license terms.
 
 ---
 
-*IBM Quantum Computing Agent (BQCA) — Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist*
+*IBM Quantum Computing Agent (QCA) — Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist*
