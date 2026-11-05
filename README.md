@@ -190,6 +190,9 @@ find . -name '*.sh' -type f -exec chmod +x {} \;
 
 ## Authentication
 
+> *Quantum Computing Appliance uses Bob and you need to setup bob shell api one-time authentication browserless pipe.*
+
+
 ### Browserless API-Key Authentication
 
 This is the **default and recommended** authentication method. The appliance reads `BOB_API_KEY` from `.env` and authenticates directly without requiring a browser.
