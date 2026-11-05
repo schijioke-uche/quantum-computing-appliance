@@ -81,11 +81,11 @@ Before installing the BQCA appliance, ensure the following are available on your
 The `main` branch is the only available branch.
 
 ```bash
-git clone https://github.com/IBM/bob-quantum-computing-appliance.git
+git clone https://github.com/IBM/quantum-computing-appliance.git
 cd bob-quantum-computing-appliance
 ```
 
-> The working directory for all subsequent steps is `bob-quantum-computing-appliance/` — the repository root that contains `xLaunchpad.sh`. The `bqca/` subdirectory is the appliance payload and is managed internally by the launchers.
+> The working directory for all subsequent steps is `quantum-computing-appliance/` — the repository root that contains `xLaunchpad.sh`. The `bqca/` subdirectory is the appliance payload and is managed internally by the launchers.
 
 ---
 
@@ -621,4 +621,4 @@ See [`LICENSE`](./LICENSE) for the project license terms.
 
 ---
 
-*IBM Bob Quantum Computing Agent (BQCA) — Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist*
+*IBM Quantum Computing Agent (BQCA) — Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist*
