@@ -1,14 +1,14 @@
-# IBM Bob Quantum Computing Appliance (BQCA)
+# IBM Quantum Computing Appliance (QCA)
 
 > **Author:** Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist
 >
-> *IBM Bob Quantum Computing Agent — built and integrated with IBM Bob Intelligence.*
+> *Quantum Computing Appliance — built and integrated with IBM Bob Intelligence.*
 
 ---
 
 ## Table of Contents
 
-- [IBM Bob Quantum Computing Appliance (BQCA)](#ibm-bob-quantum-computing-appliance-bqca)
+- [IBM Quantum Computing Appliance (QCA)](#ibm-quantum-computing-appliance-qca)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Prerequisites](#prerequisites)
