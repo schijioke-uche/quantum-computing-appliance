@@ -190,7 +190,7 @@ find . -name '*.sh' -type f -exec chmod +x {} \;
 
 ## Authentication
 
-> *Quantum Computing Appliance uses Bob and you need to setup bob shell api one-time authentication browserless pipe.*
+> *QCA uses Bob and you need to setup bob shell api one-time authentication browserless pipe.*
 
 
 ### Browserless API-Key Authentication
