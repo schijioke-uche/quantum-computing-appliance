@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Toy Shor's algorithm: factor N=15 and recover a toy RSA private key.
 
-EDUCATIONAL ONLY.  This does NOT break real RSA keys.
+EDUCATIONAL ONLY.  Do not apply on Real RSA (1024, 2048, and others)
+
+SECURITY RISK: This script is an attack on RSA Cryptography - Do not use in business RSA.
 
 Pipeline:
   1. Toy RSA key pair from p=3, q=5 (N=15, e=7). Only (N, e) is "public".
