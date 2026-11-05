@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
@@ -13,8 +14,6 @@ chmod +x bqca/*.sh
 
 git add -A 
 
-git commit -m "Updated IBM Bob appliance"
+git commit -m "Updated quantum appliance"
 
 git push origin main
-
-

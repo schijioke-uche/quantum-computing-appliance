@@ -1,6 +1,6 @@
 # IBM Quantum Computing Appliance (QCA)
 
-> **Author:** Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist
+> **Author:** Dr. Jeffrey Chijioke-Uche, IBM Computer Scientist (Quantum Ambassador)
 >
 > *Quantum Computing Appliance — built and integrated with IBM Bob Intelligence.*
 
