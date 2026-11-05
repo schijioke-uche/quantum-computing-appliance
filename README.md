@@ -185,11 +185,6 @@ Ensure all shell scripts are executable:
 find . -name '*.sh' -type f -exec chmod +x {} \;
 ```
 
-Or use the built-in SDLC automation (which applies this automatically):
-
-```bash
-./sdlc.sh
-```
 
 ---
 
