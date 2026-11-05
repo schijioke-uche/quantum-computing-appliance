@@ -1,23 +1,23 @@
 ========================================================================================
 BQCA v48 FORMAL POLICY COMPLIANCE REPORT
 ========================================================================================
-Artifact                : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Artifact                : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
 Artifact type           : code
-Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
+Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
 Active policy SHA-256   : 63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461
 Validation contract SHA : dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
-Validation date/time    : 2026-10-09T17:13:39.514553-04:00
+Validation date/time    : 2026-10-30T11:23:06.005932-04:00
 Artifact SHA-256        : f994bdeb2e642df64838c0ec502a61a5b969f3d3886167b2c3c5b2b10509ae3e
 ----------------------------------------------------------------------------------------
 VALIDATION GATES
 ----------------------------------------------------------------------------------------
-Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Python syntax                   : PASS     BQCA_PYTHON_SYNTAX_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Code policy                     : PASS     BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Home environment                : PASS     BQCA_HOME_ENV_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Result-output contract          : PASS     BQCA_RESULT_OUTPUT_POLICY_V48_CODE=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
-Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Python syntax                   : PASS     BQCA_PYTHON_SYNTAX_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Code policy                     : PASS     BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Home environment                : PASS     BQCA_HOME_ENV_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Result-output contract          : PASS     BQCA_RESULT_OUTPUT_POLICY_V48_CODE=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
+Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/tail-latency-decoder-experiment/tail_latency_decoder_experiment.py
 ----------------------------------------------------------------------------------------
 FINAL STATUS            : COMPLIANT
 ========================================================================================

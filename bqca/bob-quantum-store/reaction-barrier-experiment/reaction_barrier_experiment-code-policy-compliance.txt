@@ -1,23 +1,23 @@
 ========================================================================================
 BQCA v48 FORMAL POLICY COMPLIANCE REPORT
 ========================================================================================
-Artifact                : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Artifact                : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
 Artifact type           : code
-Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
+Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
 Active policy SHA-256   : 63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461
 Validation contract SHA : dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
-Validation date/time    : 2026-10-09T17:13:39.676400-04:00
+Validation date/time    : 2026-10-30T11:23:06.184484-04:00
 Artifact SHA-256        : c10facd2fc598c15944446bba6f86405114f2c5b148fe7e48a3f6dd5d8c3c8f3
 ----------------------------------------------------------------------------------------
 VALIDATION GATES
 ----------------------------------------------------------------------------------------
-Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Python syntax                   : PASS     BQCA_PYTHON_SYNTAX_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Code policy                     : PASS     BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Home environment                : PASS     BQCA_HOME_ENV_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Result-output contract          : PASS     BQCA_RESULT_OUTPUT_POLICY_V48_CODE=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
-Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Python syntax                   : PASS     BQCA_PYTHON_SYNTAX_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Code policy                     : PASS     BQCA_QISKIT_CODE_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Home environment                : PASS     BQCA_HOME_ENV_POLICY_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Result-output contract          : PASS     BQCA_RESULT_OUTPUT_POLICY_V48_CODE=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
+Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/reaction-barrier-experiment/reaction_barrier_experiment.py
 ----------------------------------------------------------------------------------------
 FINAL STATUS            : COMPLIANT
 ========================================================================================

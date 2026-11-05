@@ -1,0 +1,174 @@
+JOB ID: dbl2smhkdqps7393fie0
+========================================================================================
+BQCA v48 DIRECT QUANTUM EXECUTION RESULT OUTPUT
+========================================================================================
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Execution target        : REAL_QPU
+Source artifact         : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/attack.py
+Command                 : env PYTHONUNBUFFERED=1 /home/architect/qiskit-v2x-env/bin/python -u /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/attack.py
+Result output           : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/attack-result-output.txt
+Output mirror           : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/output.txt
+Started                 : 2026-11-03T18:55:44Z
+Completed               : 2026-11-03T18:56:34Z
+Duration seconds        : 50
+Exit status             : 0
+Plan                    : Open Plan
+Backend                 : ibm_fez
+Job ID                  : dbl2smhkdqps7393fie0
+Fallback reason         : NONE
+Notebook synchronization: PASS
+----------------------------------------------------------------------------------------
+COMPLETE TERMINAL OUTPUT (STDOUT + STDERR)
+----------------------------------------------------------------------------------------
+🌐 Live
+# BQCA_EXECUTION_CONTRACT: Using /home/architect/qiskit-v2x-env/bin/python
+# BQCA_V48_UPDATE4_RESULT_CAPTURE: bqca-direct-execution.sh run
+🌐 Live
+==============================================================================================================================
+Shor's algorithm: Break and recover the demo RSA-Toy private key cryptography
+Educational only: Do not apply to real RSA-1024/2048/4096, et al. keys.
+==============================================================================================================================
+
+
++----------+-----------------------------+-----------------------------+-----------+--------------------+
+| RSA      | Algorithm qubits required   | Algorithm gates required    | Key size  | Public exponent    |
++----------+-----------------------------+-----------------------------+-----------+--------------------+
+| RSA-Toy  | 7 (this demo)               | 610 (this demo)             | 4 bits    | 7                  |
++----------+-----------------------------+-----------------------------+-----------+--------------------+
+
+
+Quantum RSA-Toy public key demo cryptography attack. An RSA cryptography public key is a pair of modulus & exponent (p, q).
+┌──────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│Prime │  Meaning                                                                                                            │
+├──────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ p    │  The modulus, the product of two secret primes. The demo attack to try to recover those secret primes.              │
+├──────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ q    │  The public exponent, used to encrypt which shares no common factor with φ(p)                                       │
+└──────┴─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+Prime factors: p x q = N.
+Public key modulus & exponent: N=15, e=7
+Toy RSA ciphertext of message 2: 8
+Base a=7; classical order check: smallest r with a^r = 1 mod N is 4
+Circuit: 7 qubits, depth 5
+Saved circuit PNG: **********************************
+Attempting real QPU through Qiskit Connector first...
+==================================================================================
+
+   ____   ______                                  __              
+  / __ \ / ____/____   ____   ____   ___   _____ / /_ ____   _____
+ / / / // /    / __ \ / __ \ / __ \ / _ \ / ___// __// __ \ / ___/
+/ /_/ // /___ / /_/ // / / // / / //  __// /__ / /_ / /_/ // /    
+\___\_\\____/ \____//_/ /_//_/ /_/ \___/ \___/ \__/ \____//_/     
+                                                                  
+🧠 Qiskit Connector® for Quantum Backend Realtime Connection
+
+
+⚛️ Connecting (Open Plan) to least-busy QPU...
+----------------------------------------------------------------------------------
+⚛️ Connected [Open Plan] → Realtime Least Busy QPU:: [ibm_fez]
+- ibm_fez
+- ibm_kingston
+- ibm_marrakesh
+
+🖥️ Least Busy QPU Now: [ibm_fez]
+🖥️ Version: 2
+🖥️ Qubits Count: 156
+🖥️ Backend [ibm_fez] ready for use: ✔️ Yes
+🖥️ Operational: Open Plan
+==================================================================================
+
+⚛️ Getting (Open Plan) Least-busy QPU Processor Info...
+----------------------------------------------------------------------------------
+
+--- 🔳  Processor Details for QConnector Least Busy Backend QPU: ibm_fez ---
+🦾 Processor Type: Heron
+🦾 Processor Revision: r2
+🦾 Processor status: 🟢 Online
+                        
+                        
+         .--:.          
+          : .-=-        
+          : -...        
+          :..:          
+           . .:         
+          :::::         
+         ::  .=         
+        :-:: .-         
+       :::::.-          
+      :-:::::-          
+      :=::: ::          
+      .--:  ::          
+            ::          
+            ::          
+            ..          
+                        
+                        
+                        
+🟢 Heron Quantum Processor
+==================================================================================
+
+🖥️ Your Plan: Open Plan
+🖥️ Least Busy QPU: ibm_fez
+🖥️ Backend Status: 🟢 Online
+Real QPU job result retrieved. Post-processing:
+  measured y= 4 (100) x526   phase=4/8 -> r=4
+Saved histogram PNG: ****************************************
+
+================================================================================
+RESULT SUMMARY    -  November 3, 2026, 01:56 PM EST
+================================================================================
++------------------------------+-----------------------------------------------+
+| Item                         | Value                                         |
++------------------------------+-----------------------------------------------+
+| Execution target             | REAL_QPU                                      |
+| Plan                         | Open Plan                                     |
+| Backend                      | ibm_fez                                       |
+| Job ID                       | dbl2smhkdqps7393fie0                          |
+| Fallback reason              | NONE                                          |
+| Period r                     | 4                                             |
+| Factors                      | 15 = 3 x 5                                    |
+| phi(N)                       | (3-1)(5-1) = 8                                |
+| Recovered private exponent d | e^-1 mod phi = 7                              |
+| Decrypt check                | ciphertext 8 with d -> 2 (original message 2) |
+| Result                       | SUCCESS                                       |
+| Time taken to break RSA      | 31.22 seconds (Attack wall-clock)             |
++------------------------------+-----------------------------------------------+
+EXPERIMENT INFERENCE:
+The demo Shor's algorithm broke the Toy RSA Cryptography and recovered the RSA
+private key exponent. It also performed decrypt check for accuracy. This experiment
+is successful for the Toy RSA used.
+
+NOTES:
+1. Only the public key and the ciphertext were used to recover the private key - That's how simple it is to attack.
+2. Large Fault-tolerant quantum computer is projected to be available in 2029.
+3. Plan migration to post-quantum cryptography (Quantum Safe Technology).
+--------------------------------------------------------------------------------
+BQCA_EXECUTION_TARGET=REAL_QPU
+BQCA_PLAN=Open Plan
+BQCA_BACKEND=ibm_fez
+BQCA_JOB_ID=dbl2smhkdqps7393fie0
+BQCA_FALLBACK_REASON=NONE
+BQCA_RESULT=SUCCESS
+BQCA_RESULT_VALUE=N=15 = 3 x 5; d=7; decrypted=2
+----------------------------------------------------------------------------------------
+RESULT SUMMARY
+----------------------------------------------------------------------------------------
+Execution successful    : YES
+Result contract valid   : YES
+Execution method        : DIRECT
+Final execution target  : REAL_QPU
+Real-QPU job ID         : dbl2smhkdqps7393fie0
+Backend                 : ibm_fez
+Plan                    : Open Plan
+Reported result status  : SUCCESS
+Reported result value   : N=15 = 3 x 5; d=7; decrypted=2
+Process exit status     : 0
+Completion date/time    : 2026-11-03T18:56:34Z
+Total duration          : 50 seconds
+Source artifact         : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/attack.py
+Result output           : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/attack-result-output.txt
+Compatibility output    : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-store/shor-cryptography-break/output.txt
+Policy/Execution issue(s): NONE
+========================================================================================

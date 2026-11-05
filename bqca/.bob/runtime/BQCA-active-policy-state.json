@@ -1,6 +1,6 @@
 {
   "active_version": "v48",
-  "cache_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/runtime/BQCA-active-policy-state.json",
+  "cache_path": "/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/runtime/BQCA-active-policy-state.json",
   "contract": {
     "binding": {
       "listener": ".bob/quantum-tools/bqca-active-policy-listener.sh",
@@ -356,10 +356,10 @@
     "schema_version": 1
   },
   "contract_sha256": "dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc",
-  "policy_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md",
+  "policy_path": "/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md",
   "policy_sha256": "63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461",
-  "registry_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-ACTIVE-POLICY-REGISTRY.json",
+  "registry_path": "/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-ACTIVE-POLICY-REGISTRY.json",
   "schema_version": 1,
-  "synced_utc": "2026-10-09T21:13:40Z",
-  "versioned_policy_path": "/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY-v48.md"
+  "synced_utc": "2026-11-03T12:32:53Z",
+  "versioned_policy_path": "/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY-v48.md"
 }

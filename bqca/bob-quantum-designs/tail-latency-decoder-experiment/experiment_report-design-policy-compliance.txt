@@ -1,21 +1,21 @@
 ========================================================================================
 BQCA v48 FORMAL POLICY COMPLIANCE REPORT
 ========================================================================================
-Artifact                : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Artifact                : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
 Artifact type           : design
-Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
+Canonical policy        : /home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/.bob/BQCA-PRODUCTION-POLICY.md
 Active policy SHA-256   : 63c761bf41c69cf6223c5175155ac8bafab563d6dc9cd28eb1d27df81efcb461
 Validation contract SHA : dc8d1bbf244fd32081b6d7d549d929381cbdedb92d1e1874695de79f72777ffc
-Validation date/time    : 2026-10-09T17:13:38.528130-04:00
+Validation date/time    : 2026-10-30T11:23:04.952481-04:00
 Artifact SHA-256        : ad3a19167d8163f364aec0f5068627fa84e90ed1786ff6fa25ff002c95a67dbe
 ----------------------------------------------------------------------------------------
 VALIDATION GATES
 ----------------------------------------------------------------------------------------
-Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
-Design policy                   : FAIL     BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
-Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
-Result-output contract          : FAIL     BQCA_RESULT_OUTPUT_POLICY_V48_DESIGN=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
-Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Artifact routing                : PASS     BQCA_ARTIFACT_ROUTING_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Design policy                   : FAIL     BQCA_QISKIT_DESIGN_POLICY_V48=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Hello World scope               : PASS     BQCA_HELLO_WORLD_SCOPE_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Result-output contract          : FAIL     BQCA_RESULT_OUTPUT_POLICY_V48_DESIGN=FAIL active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
+Secret scan                     : PASS     BQCA_SECRET_SCAN_V48=PASS active_policy=v48 file=/home/architect/IBM-BOB-APPLIANCES/github.com/bob-quantum-computing-appliance/bqca/bob-quantum-designs/tail-latency-decoder-experiment/experiment_report.txt
 ----------------------------------------------------------------------------------------
 VALIDATION FINDINGS
 ----------------------------------------------------------------------------------------

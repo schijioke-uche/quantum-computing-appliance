@@ -13,6 +13,10 @@ POLICY_VERSION="v48"
 POLICY_UPDATE="cumulative"
 
 info() { printf '[BQCA %s %s][DIRECT] %s\n' "$POLICY_VERSION" "$POLICY_UPDATE" "$*"; }
+# Quiet terminal (BQCA_QUIET_TERMINAL=1, set by a script's own hand-off): the
+# wrapper's progress and footer lines are not echoed; the result files are unchanged.
+quiet_terminal() { [[ "${BQCA_QUIET_TERMINAL:-0}" == "1" ]]; }
+quiet_info() { quiet_terminal || info "$@"; }
 warn() { printf '[BQCA %s %s][DIRECT][WARN] %s\n' "$POLICY_VERSION" "$POLICY_UPDATE" "$*" >&2; }
 fail() { printf '[BQCA %s %s][DIRECT][ERROR] %s\n' "$POLICY_VERSION" "$POLICY_UPDATE" "$*" >&2; exit 2; }
 
@@ -41,6 +45,13 @@ absolute_path() {
 import pathlib, sys
 print(pathlib.Path(sys.argv[1]).expanduser().resolve())
 PY
+}
+
+# Screen-only filter: the BQCA_* contract markers stay in the captured stream
+# ($raw, read by marker_value and written to the result files) but are not
+# echoed to the terminal, because the workload's own summary already shows them.
+hide_markers_on_screen() {
+  grep --line-buffered -v -E '^BQCA_(EXECUTION_TARGET|PLAN|BACKEND|JOB_ID|FALLBACK_REASON|RESULT|RESULT_VALUE)=' || true
 }
 
 marker_value() {
@@ -113,21 +124,21 @@ run_direct() {
 
   start_iso="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
   start_epoch="$(date +%s)"
-  info "Executing: $source_abs"
-  info "Live output is displayed and captured"
+  quiet_info "Executing: $source_abs"
+  quiet_info "Live output is displayed and captured"
 
   {
     printf '%s\n' '🌐 Live'
     printf '# BQCA_EXECUTION_CONTRACT: Using %s\n' "$python_bin"
     printf '%s\n' '# BQCA_V48_UPDATE4_RESULT_CAPTURE: bqca-direct-execution.sh run'
-  } | tee "$raw"
+  } | if quiet_terminal; then cat > "$raw"; else tee "$raw"; fi
 
   set +e
   if [[ "$kind" == "python" ]]; then
-    PYTHONUNBUFFERED=1 "$python_bin" -u "$source_abs" "$@" 2>&1 | tee -a "$raw"
+    PYTHONUNBUFFERED=1 "$python_bin" -u "$source_abs" "$@" 2>&1 | tee -a "$raw" | hide_markers_on_screen
     status=${PIPESTATUS[0]}
   else
-    PYTHONUNBUFFERED=1 "$python_bin" -u -m jupyter nbconvert --to notebook --execute --inplace "$source_abs" 2>&1 | tee -a "$raw"
+    PYTHONUNBUFFERED=1 "$python_bin" -u -m jupyter nbconvert --to notebook --execute --inplace "$source_abs" 2>&1 | tee -a "$raw" | hide_markers_on_screen
     status=${PIPESTATUS[0]}
   fi
   set -e
@@ -228,7 +239,7 @@ run_direct() {
     printf '%s\n' '----------------------------------------------------------------------------------------'
     printf '%s\n' 'COMPLETE TERMINAL OUTPUT (STDOUT + STDERR)'
     printf '%s\n' '----------------------------------------------------------------------------------------'
-    cat "$raw"
+    sed -E 's/\x1b\[[0-9;]*m//g' "$raw"      # published result files carry no ANSI color codes
     printf '%s\n' '----------------------------------------------------------------------------------------'
     printf '%s\n' 'RESULT SUMMARY'
     printf '%s\n' '----------------------------------------------------------------------------------------'
@@ -282,10 +293,10 @@ run_direct() {
   rm -f "$raw"
   trap - RETURN
 
-  printf '\n'
-  info "Execution complete: status=$status contract=$contract_valid"
-  info "Canonical result: $canonical"
-  info "Output mirror: $mirror"
+  quiet_terminal || printf '\n'
+  quiet_info "Execution complete: status=$status contract=$contract_valid"
+  quiet_info "Canonical result: $canonical"
+  quiet_info "Output mirror: $mirror"
   if [[ "$contract_valid" != "YES" ]]; then
     warn "Direct execution completed with policy warning(s): $issues"
   fi
